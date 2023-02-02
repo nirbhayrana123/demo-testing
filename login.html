@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+</head>
+
+
+<body class="h-full box-border">
+  <div class="login flex flex-wrap min-h-screen w-full bg-no-repeat bg-cover content-center justify-center  py-10 " style="background-image:url(./src/images/loginbac.png) ;">
+    <section class=" md:flex flex-wrap  max-w-[85%] rounded-lg">
+      <div class="md:w-1/2 w-full p-14 rounded-tl-lg rounded-bl-lg bg-[#F1F9FB] bg-no-repeat	" style="    background-position: bottom;
+      background-size: 248px;  background-image: url(src/images/lobga.png);">
+        <div class="text-center">
+        <img src="src/images/loginlogo.png" class="mx-auto">
+        <h3 class="text-3xl mt-14 text-[#144373] font-Poppins font-semibold">Enrich your data with Comae</h3>
+        <p class="text-[#144373] text-xl font-normal font-Poppins mt-4 ">Cloud-based Memory Analysis Platform for Incident Response and Threat Hunting</p>
+      </div>
+      </div>
+      <div class="md:w-1/2 w-full p-14 rounded-tr-lg rounded-br-lg bg-white" >
+        <div class="mainlogin" id="mainlogin">
+        <diiv class="text-center">
+        <h4 class="text-[#3CD2A5] text-2xl font-Poppins font-semibold">Welcome back!</h4>
+        <h3 class="text-3xl font-Poppins font-medium text-black mt-3">Login to your account</h3>
+      </diiv>
+        <form class="mt-4" action="emptyCases.html">
+          <div class="mt-10">
+            <label class="mb-2 font-Poppins  block text-xl font-semibold">Email</label>
+            <input type="email" placeholder="Enter your email here" class="block w-full   bg-white rounded-md border border-gray-200  focus:outline-none py-4 px-7 text-black" />
+          </div>
+          <div class=" mt-10">
+            <label class="mb-2 font-Poppins  block text-xl font-semibold">Password</label>
+            <input type="email" placeholder="Enter your password here" class="block w-full   bg-white rounded-md border border-gray-200  focus:outline-none py-4 px-7 text-black" />
+          </div>
+
+        
+
+          <div class="mb-10 mt-6 flex flex-wrap items-center content-center">
+            <input id="remember" type="checkbox"  class="mr-1 checked:bg-blue w-5 h-5" /> <label for="remember" class="mr-auto font-Poppins  text-lg font-normal">Remember me</label>
+            <a href="#" id="forgetpass" class="text-lg font-Poppins font-semibold text-[#00A682]">Forgot password?</a>
+          </div>
+
+          <div class="mb-3">
+            <button class="mb-1.5 text-xl font-Poppins font-medium  block w-full text-center text-white bg-[#3CD2A5]   px-5 py-3 rounded-md" id="login_bt">Login</button>
+           
+          </div>
+          <div class="mt-8 flex justify-center text-center">
+            <p class="text-lg font-Poppins font-normal text-black mr-2">Not registered yet?</p>
+            <a href="onboard.html" class="text-[#00A682] font-Poppins font-normal text-lg ">Register Now</a>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-sm font-Poppins font-normal text-black ">By Signing in, your agree to our <a href="#" class="underline"> Terms & Conditions</a> and <a href="#" class="underline">Privacy Policy.</a></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="sendlink hidden" id="sendlink">
+        <div class="relative justify-center mt-3 items-center flex">
+          <svg width="23" height="19" class="absolute left-0 text-black cursor-pointer" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.6666 9.65585C22.6666 10.1621 22.2904 10.5805 21.8023 10.6467L21.6666 10.6558L4.08796 10.655L10.4386 16.9798C10.83 17.3694 10.8313 18.0026 10.4417 18.394C10.0874 18.7497 9.53192 18.7832 9.13981 18.4936L9.02744 18.397L0.960777 10.365C0.909189 10.3136 0.864382 10.258 0.826351 10.1993C0.815611 10.1817 0.804676 10.1636 0.794312 10.1452C0.784777 10.1293 0.776161 10.1129 0.768032 10.0963C0.756744 10.0722 0.745714 10.0472 0.735699 10.0218C0.727562 10.0022 0.720768 9.98307 0.714571 9.96384C0.707203 9.93998 0.700045 9.91455 0.693888 9.88874C0.68931 9.87072 0.685684 9.85337 0.682522 9.83596C0.678076 9.81005 0.67429 9.78324 0.671589 9.75611C0.669258 9.73542 0.667854 9.71492 0.667078 9.6944C0.666878 9.68196 0.666626 9.66893 0.666626 9.65585L0.667126 9.61711C0.667892 9.59748 0.669233 9.57787 0.67115 9.55831L0.666626 9.65585C0.666626 9.59274 0.67247 9.531 0.683649 9.47114C0.686241 9.45684 0.689331 9.44216 0.692751 9.42755C0.699854 9.39744 0.708063 9.36846 0.717516 9.34004C0.722155 9.32592 0.72756 9.31083 0.733337 9.29586C0.745022 9.26577 0.757725 9.23708 0.771698 9.20914C0.778189 9.196 0.78546 9.18225 0.793072 9.16864C0.805569 9.14642 0.818443 9.12532 0.832056 9.10474C0.841661 9.09018 0.852297 9.07503 0.863403 9.06011L0.872057 9.04858C0.898998 9.01339 0.928226 8.98003 0.959518 8.94874L0.960718 8.94781L9.02738 0.914478C9.41872 0.524763 10.0519 0.526074 10.4416 0.917406C10.7959 1.27316 10.827 1.82878 10.5357 2.21966L10.4387 2.33162L4.09063 8.65505L21.6666 8.65585C22.2189 8.65585 22.6666 9.10356 22.6666 9.65585Z" fill="#263252"/>
+            </svg>            
+        <h3 class=" text-2xl font-Poppins font-medium text-blackt ">Forgot password</h3>
+      </div>
+        <form class="mt-4">
+          <div class="mt-10 relative">
+            <label class="mb-2 font-Poppins text-black  block text-base font-medium">Email</label>
+            <svg width="21" height="18" class="absolute top-[52px] left-4" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2706 0.125C18.3231 0.125 20.6248 2.61558 20.6248 5.91833V12.214C20.6248 13.9043 20.0272 15.4315 18.9409 16.515C17.9665 17.4858 16.7024 18 15.2853 18H6.25334C4.83892 18 3.57575 17.4867 2.60042 16.515C1.51417 15.4315 0.916504 13.9043 0.916504 12.214V5.91833C0.916504 2.61558 3.21825 0.125 6.27075 0.125H15.2706ZM15.2706 1.5H6.27075C3.96534 1.5 2.2915 3.35808 2.2915 5.91833V12.214C2.2915 13.5367 2.74617 14.7183 3.57117 15.5406C4.2825 16.251 5.21109 16.625 6.25609 16.625H15.2706C15.2724 16.6232 15.2798 16.625 15.2853 16.625C16.3312 16.625 17.2588 16.251 17.9702 15.5406C18.7961 14.7183 19.2498 13.5367 19.2498 12.214V5.91833C19.2498 3.35808 17.576 1.5 15.2706 1.5ZM16.7153 5.74307C16.9545 6.03732 16.9096 6.46998 16.6153 6.71015L12.5417 10.0212C12.0265 10.43 11.4105 10.6344 10.7954 10.6344C10.1822 10.6344 9.57075 10.4318 9.05925 10.0267L4.948 6.71198C4.65192 6.47365 4.60609 6.04007 4.8435 5.7449C5.08275 5.45065 5.51542 5.4039 5.81059 5.64132L9.91817 8.95232C10.4343 9.36115 11.1612 9.36115 11.6809 8.94865L15.7473 5.64315C16.0424 5.40207 16.4751 5.4479 16.7153 5.74307Z" fill="#737A80"/>
+              </svg>
+              
+            <input type="email" placeholder="Enter your email here" class="block w-full   bg-white rounded-md border border-gray-200  focus:outline-none py-4 px-11 text-black" />
+          </div>
+
+          <div class="mb-3 mt-14">
+            <button class="mb-1.5 text-xl font-Poppins font-medium  block w-full text-center text-white bg-[#3CD2A5]   px-5 py-3 rounded-md">Send Link</button>
+           
+          </div>
+          <div class="mt-8 flex justify-center text-center">
+            <p class="text-lg font-Poppins font-normal text-black mr-2">Not registered yet?</p>
+            <a href="#" class="text-[#00A682] font-Poppins font-normal text-lg ">Register Now</a>
+          </div>
+        </form>
+      </div>
+
+      </div>
+    </section>
+  
+    
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="node_modules/tw-elements/dist/js/index.min.js"></script> 
+  <script src="src/js/admin.js"></script>
+</body>
+</html> 

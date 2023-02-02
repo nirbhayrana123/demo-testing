@@ -1,0 +1,401 @@
+<!doctype html>
+<html class="bg-[#F8FAFB]">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" rel="stylesheet"> 
+  <link href="main.css" rel="stylesheet">
+
+</head>
+
+
+<body class="box-border ">
+  <!-- component -->
+  <div class="w-full h-full">
+    <!--header-->
+    <header class="px-4 py-2 header mr-0 fixed bg-[#F8FAFB] top-0 right-0 w-full z-50 ">
+      <div class="flex bg-bacgrediant rounded-lg  top-0 left-0 right-0 items-center justify-between md:px-6 px-4 py-3">
+        <div class=" relative lg:w-full lg:max-w-md flex items-center">
+          <div class="logo mr-6">
+            <img src="src/images/logo.png">
+          </div>
+      <div class="selceter relative">
+        <p class="absolute left-2.5 top-0 text-[10px] font-Poppins font-medium text-[#1E1E1E]">Organisation</p>
+        <select class="bg-inputbg p-3 text-[#114273] text-xs font-Poppins font-semibold  rounded-lg">
+          <option>
+            Compae Response Team
+          </option>
+          <option>
+            Compae Response Team
+          </option>
+          <option>
+            Compae Response Team
+          </option>
+          <option>
+            Compae Response Team
+          </option>
+        </select>
+      </div>
+        </div>
+     
+       
+
+
+      <div class="block">
+        <div class="sm:ml-4 ml-0 flex items-center md:ml-6">
+          <form class="flex items-center">
+            <div class=" w-full mr-5">
+            <div class="relative md:block hidden">
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.6397 0C8.74949 0 11.279 2.52952 11.279 5.63931C11.279 7.10649 10.716 8.44464 9.79456 9.44893L11.6076 11.2582C11.7773 11.4278 11.7778 11.7023 11.6082 11.872C11.5236 11.9577 11.4119 12 11.3007 12C11.1901 12 11.0789 11.9577 10.9937 11.8732L9.15883 10.0434C8.19359 10.8164 6.96971 11.2792 5.6397 11.2792C2.52992 11.2792 -0.000183105 8.74909 -0.000183105 5.63931C-0.000183105 2.52952 2.52992 0 5.6397 0ZM5.6397 0.868655C3.00884 0.868655 0.868471 3.00844 0.868471 5.63931C0.868471 8.27017 3.00884 10.4105 5.6397 10.4105C8.26999 10.4105 10.4104 8.27017 10.4104 5.63931C10.4104 3.00844 8.26999 0.868655 5.6397 0.868655Z" fill="#1E1E1E"/>
+                  </svg>
+                  
+              </div>
+              <input type="text" id="simple-search"
+                class="bg-inputbg border border-inputbg text-gray-900 text-xs font-Poppins rounded-md focus:ring-blue-500 focus:border-inputbg block font-medium w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-inputbg dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search" required="">
+              </div>
+
+              <div class="md:hidden block  ">
+                <div id="butone" class=" btn bg-[#F5F9FF] search-icon cursor-pointer p-3 rounded-full">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.755 11.255H11.965L11.685 10.985C12.665 9.845 13.255 8.365 13.255 6.755C13.255 3.165 10.345 0.255001 6.755 0.255001C3.165 0.255001 0.255005 3.165 0.255005 6.755C0.255005 10.345 3.165 13.255 6.755 13.255C8.365 13.255 9.845 12.665 10.985 11.685L11.255 11.965V12.755L16.255 17.745L17.745 16.255L12.755 11.255ZM6.755 11.255C4.26501 11.255 2.255 9.245 2.255 6.755C2.255 4.265 4.26501 2.255 6.755 2.255C9.245 2.255 11.255 4.265 11.255 6.755C11.255 9.245 9.245 11.255 6.755 11.255Z" fill="#3376CD"/>
+                    </svg>
+                    
+                </div>
+             </div>
+  
+              <div class="sarchbar mt-4 hidden absolute input left-0 px-6 right-0 w-full">
+                <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search">
+              </div>
+            </div>
+               
+          </form>
+          <button type="button"
+            class=" mr-5   bg-bgtransperent   rounded-lg text-sm p-1.5 items-center text-black">
+            <span class="sr-only">View notifications</span>
+            <!-- Heroicon name: outline/bell -->
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.7" d="M8.33328 20C9.84253 20 11.105 18.9241 11.395 17.5H5.27161C5.56168 18.9241 6.82419 20 8.33328 20Z" fill="#D6F3FB"/>
+              <path opacity="0.6" d="M14.6466 12.0799C14.6249 12.0799 14.6049 12.0833 14.5833 12.0833C10.9074 12.0833 7.91672 9.09256 7.91672 5.41672C7.91672 3.97247 8.38333 2.6384 9.16672 1.54495V0.833282C9.16672 0.372467 8.79333 0 8.33328 0C7.87338 0 7.5 0.372467 7.5 0.833282V1.7334C4.67743 2.14005 2.5 4.56757 2.5 7.5V9.8233C2.5 11.4725 1.7775 13.0292 0.509949 14.1008C0.185852 14.3784 0 14.7816 0 15.2083C0 16.0126 0.654144 16.6667 1.45828 16.6667H15.2083C16.0126 16.6667 16.6667 16.0126 16.6667 15.2083C16.6667 14.7816 16.4809 14.3784 16.1484 14.0942C15.4916 13.5384 14.985 12.8467 14.6466 12.0799V12.0799Z" fill="#D6F3FB"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16675 5.41672C9.16675 2.42996 11.5967 0 14.5833 0C17.5701 0 20 2.42996 20 5.41672C20 8.40332 17.5701 10.8333 14.5833 10.8333C11.5967 10.8333 9.16675 8.40332 9.16675 5.41672Z" fill="#ECCA87"/>
+              <path d="M14.1643 8.35693H15.1929V3.14979H13.4714V4.07122H14.1643V8.35693Z" fill="#114273"/>
+              </svg>
+              
+
+          </button>
+          <button type="button"
+          class=" block     bg-bgtransperent   rounded-lg text-sm p-1.5 items-center text-black">
+          <!-- Heroicon name: outline/bell -->
+          <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.6" d="M9.65736 0.833496C10.3506 0.833496 10.9782 1.2185 11.3248 1.78683C11.4935 2.06183 11.6059 2.401 11.5778 2.7585C11.559 3.0335 11.6434 3.3085 11.7932 3.56516C12.271 4.34433 13.3296 4.63766 14.154 4.19766C15.0814 3.666 16.2524 3.98683 16.7864 4.89433L17.414 5.976C17.9574 6.8835 17.6576 8.04766 16.7208 8.57016C15.9245 9.03766 15.6435 10.0735 16.1212 10.8618C16.2711 11.1093 16.4397 11.3202 16.702 11.4485C17.0299 11.6227 17.2829 11.8977 17.4609 12.1727C17.8075 12.741 17.7794 13.4377 17.4421 14.0518L16.7864 15.1518C16.4397 15.7385 15.7934 16.1052 15.1282 16.1052C14.8004 16.1052 14.435 16.0135 14.1352 15.8302C13.8917 15.6743 13.6106 15.6193 13.3109 15.6193C12.3834 15.6193 11.6059 16.3802 11.5778 17.2877C11.5778 18.3418 10.7159 19.1668 9.63862 19.1668H8.36458C7.2779 19.1668 6.41605 18.3418 6.41605 17.2877C6.39731 16.3802 5.61977 15.6193 4.69235 15.6193C4.3832 15.6193 4.10217 15.6743 3.86797 15.8302C3.56819 16.0135 3.19347 16.1052 2.87496 16.1052C2.20047 16.1052 1.55409 15.7385 1.20747 15.1518L0.561083 14.0518C0.214469 13.456 0.195733 12.741 0.542347 12.1727C0.692234 11.8977 0.973273 11.6227 1.29178 11.4485C1.55409 11.3202 1.72271 11.1093 1.88196 10.8618C2.35036 10.0735 2.06932 9.03766 1.27305 8.57016C0.34562 8.04766 0.0458462 6.8835 0.579819 5.976L1.20747 4.89433C1.75081 3.98683 2.91244 3.666 3.84923 4.19766C4.66424 4.63766 5.72282 4.34433 6.20058 3.56516C6.35047 3.3085 6.43478 3.0335 6.41605 2.7585C6.39731 2.401 6.50036 2.06183 6.67835 1.78683C7.02496 1.2185 7.65262 0.851829 8.33648 0.833496H9.65736ZM9.01097 7.41516C7.5402 7.41516 6.35047 8.57016 6.35047 10.0093C6.35047 11.4485 7.5402 12.5943 9.01097 12.5943C10.4817 12.5943 11.6434 11.4485 11.6434 10.0093C11.6434 8.57016 10.4817 7.41516 9.01097 7.41516Z" fill="#D6F3FB"/>
+            </svg>
+            
+
+        </button>
+          <!-- Profile dropdown -->
+          <div class=" ml-3">
+            <div>
+              <div class="block ">
+              <a href="#"
+                class="flex max-w-xs slide bg-bgtransperent dropdown-toggle  rounded-lg font-medium   text-sm p-1.5 items-center font-Poppins text-white">
+                 <div class=" rounded-full p-2 bg-white mr-2 w-9 h-9 text-center">
+                  <svg width="15" class="m-auto" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.51359 12.2032C11.2268 12.2032 14.3604 12.8066 14.3604 15.1345C14.3604 17.4634 11.2063 18.0453 7.51359 18.0453C3.80121 18.0453 0.666748 17.442 0.666748 15.114C0.666748 12.7852 3.8209 12.2032 7.51359 12.2032ZM7.51359 0.928223C10.029 0.928223 12.0445 2.94293 12.0445 5.4566C12.0445 7.97027 10.029 9.98584 7.51359 9.98584C4.999 9.98584 2.98271 7.97027 2.98271 5.4566C2.98271 2.94293 4.999 0.928223 7.51359 0.928223Z" fill="#114273"/>
+                    </svg>
+                    
+              </div>
+                <p>Radovan Stevanovic 
+                  <span class="block text-[#fafbfca8] font-medium text-xs font-Poppins">Admin</span> </p>
+              </a>
+            </div>
+           
+           
+            </div>
+
+
+            <div
+              class="absolute hidden right-0 z-10 mt-2 w-48 origin-top-right  rounded-md bg-white py-1 shadow-lg ring-1 dropdown ring-black ring-opacity-5 focus:outline-none">
+              <!-- Active: "bg-gray-100", Not Active: "" -->
+              <a href="#" class="block none px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                id="user-menu-item-0">Your Profile</a>
+
+              <a href="#" class="block none px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                id="user-menu-item-1">Settings</a>
+
+              <a href="#" class="block none px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                id="user-menu-item-2">Sign out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       </header>
+  </div>
+ 
+  <!--header end--> 
+   
+  <main class="  xl:mt-14 mt-20  md:px-10 px-4 relative pt-10 pb-6 min-h-screen">
+    <div class="flex items-center mb-4">
+    <a href="#" class="flex mr-1 items-center font-Poppins font-medium text-sm text-[#D7DADB]">
+      <svg width="12" height="13" class="mr-1" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4.3286 11.6181V9.83443C4.3286 9.37911 4.70041 9.01 5.15907 9.01H6.83567C7.05592 9.01 7.26716 9.09686 7.4229 9.25147C7.57864 9.40609 7.66614 9.61578 7.66614 9.83443V11.6181C7.66474 11.8074 7.73952 11.9894 7.87386 12.1238C8.00821 12.2581 8.19101 12.3337 8.3817 12.3337H9.52555C10.0598 12.335 10.5726 12.1253 10.9508 11.7508C11.3291 11.3763 11.5416 10.8677 11.5416 10.3374V5.25599C11.5416 4.82759 11.3504 4.42123 11.0193 4.14638L7.12816 1.06125C6.45128 0.52032 5.48146 0.537785 4.82479 1.10273L1.0224 4.14638C0.675745 4.41313 0.468552 4.8207 0.458313 5.25599V10.3322C0.458313 11.4376 1.36095 12.3337 2.47441 12.3337H3.59215C3.9882 12.3337 4.31006 12.0164 4.31293 11.6233L4.3286 11.6181Z" fill="#D7DADB"/>
+      </svg>
+      Home /</a>
+      <a href="#" class="flex items-center font-Poppins font-medium text-sm text-[#263252]">
+        Hunt /</a>
+    </div>
+
+
+    <div class="w-11/12 lg:w-8/12  mx-auto">
+      <div class="bg-gray-200 dark:bg-gray-700 h-1 flex items-center justify-between">
+          <div class="w-1/3 bg-[#114273] h-1 flex items-center">
+              <div class="bg-[#114273] h-6 w-6 rounded-full shadow flex items-center justify-center">
+                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.6747 1.28809C13.2415 0.854353 12.5381 0.854627 12.1044 1.28809L5.03702 8.35576L1.89587 5.21463C1.46213 4.78089 0.759044 4.78089 0.325304 5.21463C-0.108435 5.64837 -0.108435 6.35146 0.325304 6.7852L4.25157 10.7115C4.46831 10.9282 4.7525 11.0368 5.03672 11.0368C5.32094 11.0368 5.6054 10.9285 5.82213 10.7115L13.6747 2.85863C14.1084 2.42519 14.1084 1.7218 13.6747 1.28809Z" fill="white"/>
+                  </svg>
+                  
+              </div>
+          </div>
+          <div class="w-1/3 flex justify-between bg-[#EDF0F2] h-1 items-center relative">
+              <div class="bg-[#114273] h-6 w-6 rounded-full shadow flex items-center justify-center -ml-2">
+                <div class="h-4 w-4 bg-[#FFFFFF] rounded-full"></div>
+              </div>
+              <div class="bg-[#FFFFFF] dark:bg-gray-700 h-6 w-6 rounded-full shadow flex items-center justify-center -mr-3 relative">
+                  <div class="h-4 w-4 bg-[#FFFFFF] rounded-full"></div>
+              </div>
+          </div>
+          <div class="w-1/3 flex justify-end">
+              <div class="bg-white dark:bg-[#114273] h-6 w-6 rounded-full shadow"></div>
+          </div>
+      </div>
+  </div>
+
+  <div class="flex space-x-2 flex-wrap mt-14 justify-between items-center">
+    <h1 class="font-semibold text-2xl  text-blue flex items-center ">
+      <svg class="mr-3 " width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M26.6667 16.3648C26.6667 16.8711 26.2905 17.2895 25.8024 17.3557L25.6667 17.3648L8.08799 17.364L14.4386 23.6887C14.83 24.0784 14.8314 24.7116 14.4417 25.1029C14.0874 25.4587 13.5319 25.4922 13.1398 25.2026L13.0275 25.106L4.96081 17.074C4.90922 17.0226 4.86441 16.967 4.82638 16.9083C4.81564 16.8907 4.80471 16.8726 4.79434 16.8541C4.78481 16.8383 4.77619 16.8219 4.76806 16.8053C4.75677 16.7812 4.74574 16.7562 4.73573 16.7308C4.72759 16.7111 4.7208 16.6921 4.7146 16.6728C4.70723 16.649 4.70008 16.6235 4.69392 16.5977C4.68934 16.5797 4.68571 16.5624 4.68255 16.5449C4.67811 16.519 4.67432 16.4922 4.67162 16.4651C4.66929 16.4444 4.66788 16.4239 4.66711 16.4034C4.66691 16.3909 4.66666 16.3779 4.66666 16.3648L4.66716 16.3261C4.66792 16.3065 4.66926 16.2869 4.67118 16.2673L4.66666 16.3648C4.66666 16.3017 4.6725 16.24 4.68368 16.1801C4.68627 16.1658 4.68936 16.1511 4.69278 16.1365C4.69988 16.1064 4.70809 16.0774 4.71755 16.049C4.72219 16.0349 4.72759 16.0198 4.73337 16.0048C4.74505 15.9748 4.75776 15.9461 4.77173 15.9181C4.77822 15.905 4.78549 15.8912 4.7931 15.8776C4.8056 15.8554 4.81847 15.8343 4.83209 15.8137C4.84169 15.7992 4.85233 15.784 4.86343 15.7691L4.87209 15.7576C4.89903 15.7224 4.92826 15.689 4.95955 15.6577L4.96075 15.6568L13.0274 7.62346C13.4187 7.23375 14.0519 7.23506 14.4416 7.62639C14.7959 7.98215 14.827 8.53776 14.5358 8.92864L14.4387 9.0406L8.09066 15.364L25.6667 15.3648C26.2189 15.3648 26.6667 15.8125 26.6667 16.3648Z" fill="#263252"></path>
+      </svg>
+      Query Editor
+      
+        </h1>
+    <div class="flex items-center xl:mt-0 mt-3 flex-wrap ">
+      <button type="button" class="px-4 py-2 mr-4 md:mt-0 mt-2 bg-blue-600 text-blue font-medium text-sm leading-tight rounded-md border  bg-transparent font-Poppins  flex items-center border-[#114273] ">
+      <img src="src/images/Bookmark.png" class="mr-1" >
+          Saved Query </button>
+
+    <button type="button" class="px-4 font-Poppins md:mt-0 mt-2 py-2 mr-4 bg-blue-600 text-blue font-medium text-sm leading-tight rounded-md border  bg-transparent    flex items-center border-[#114273] ">
+      <svg width="16" class="mr-1" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.6667 1.80115H14.7146V1.08469C14.7146 0.951173 14.6349 0.83055 14.5121 0.77811C12.5013 -0.0802631 10.0273 0.283534 7.99998 1.72146C5.97269 0.283534 3.49866 -0.0801615 1.48793 0.77811C1.3651 0.83055 1.28544 0.951173 1.28544 1.08469V1.80115H0.333328C0.149263 1.80115 0 1.95038 0 2.13448V11.3479C0 11.532 0.149263 11.6813 0.333328 11.6813H8.00002H15.6667C15.8508 11.6813 16 11.532 16 11.3479V2.13451C16 1.95041 15.8508 1.80115 15.6667 1.80115ZM0.666657 11.0146V2.46784H1.28544V10.2981C1.28544 10.4101 1.34168 10.5146 1.43508 10.5763C1.52852 10.638 1.64663 10.6486 1.74962 10.6047C3.31097 9.93817 5.19652 10.1049 6.87007 11.0146H0.666657ZM7.66669 10.7106C6.4501 9.93533 5.09678 9.5328 3.79045 9.5328C3.15978 9.5328 2.54015 9.62661 1.95213 9.81762V2.13837C1.95213 2.13705 1.95234 2.1358 1.95234 2.13451C1.95234 2.13323 1.95217 2.13194 1.95213 2.13065V1.31016C3.73005 0.643776 5.88589 1.01644 7.66669 2.3026V10.7106ZM8.33335 2.3026C10.1141 1.01641 12.2701 0.643776 14.0479 1.31016V2.13062C14.0479 2.13191 14.0477 2.13319 14.0477 2.13448C14.0477 2.13576 14.0479 2.13705 14.0479 2.13834V9.81755C12.2418 9.23089 10.1372 9.56107 8.33335 10.7106V2.3026ZM15.3333 11.0146H9.1299C10.8035 10.1049 12.689 9.93821 14.2504 10.6047C14.3534 10.6487 14.4716 10.638 14.5649 10.5763C14.6584 10.5146 14.7146 10.4101 14.7146 10.2981V2.46784H15.3333V11.0146Z" fill="#114273"/>
+        </svg>
+        
+      Select Playbook</button>
+     
+       
+
+      <a href="select-snapshots.html" class="px-12  md:mt-0 mt-2 py-2 bg-blue-600 text-white font-medium text-sm leading-tight rounded-md border font-Poppins flex items-center border-[#3CD2A5]  bg-[#3CD2A5]">
+        Next</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="list-view  mt-5">
+      <div class="header flex items-center mb-8 justify-between">
+        
+        <div class="menust flex items-center">
+          <ul class="group-buttton items-center custometabl py-2 px-1 rounded-sm bg-grey nav flex nav-tabs flex-wrap" id="tabs-tab3" role="tablist ">
+            <li class="nav-item flex-auto text-center" role="presentation">
+            <a href="#tabs-homeFill" class=" nav-link font-medium text-xs font-Poppins rounded-sm px-[26.5px] py-[6px] focus:bg-white
+            active:bg-white" id="tabs-home-tabFill" data-bs-toggle="pill" data-bs-target="#tabs-homeFill" role="tab" aria-controls="tabs-homeFill" aria-selected="true">SQL</a>
+            </li>
+            <li class="nav-item flex-auto text-center" role="presentation">
+            <a href="#tabs-profileFill" class=" nav-link font-Poppins font-medium text-xs rounded-sm px-[26.5px] py-[6px] focus:bg-white
+            active:bg-white" id="tabs-profile-tabFill" data-bs-toggle="pill" data-bs-target="#tabs-profileFill" role="tab" aria-controls="tabs-profileFill" aria-selected="true">GQL</a>
+            </li>
+            <li class="nav-item flex-auto text-center" role="presentation">
+            <a href="#tabs-messagesFill" class="nav-link font-Poppins font-medium text-xs rounded-sm px-[26.5px] py-[6px] focus:bg-white
+            active:bg-white" id="tabs-messages-tabFill" data-bs-toggle="pill" data-bs-target="#tabs-messagesFill" role="tab" aria-controls="tabs-messagesFill" aria-selected="true">UI Builder</a>
+              </li>
+          </ul> 
+ 
+        </div>
+      </div>
+    
+    
+      <div class="tab-content" id="tabs-tabContentFill">
+        <div class="tab-pane active" id="tabs-homeFill" role="tabpanel" aria-labelledby="tabs-home-tabFill">
+          
+       <img src="src/images/codefile.svg" class="w-full">
+    
+          </div>
+        <div class="tab-pane active:show" id="tabs-profileFill" role="tabpanel" aria-labelledby="tabs-profile-tabFill">
+       <div class="flex  flex-wrap">
+        <div class="one w-1/2">
+          <img src="src/images/gql1.svg" >
+        </div>
+        <div class="tow w-1/2">
+          <img src="src/images/qgl2.svg">
+        </div>
+        </div>
+        </div>
+        <div class="tab-pane  fade" id="tabs-messagesFill" role="tabpanel" aria-labelledby="tabs-profile-tabFill">
+        <div class="bg-brounfed p-6 ">
+          <div class="pb-5 border-b border-[#D7DADB]">
+          <button type="button" class="px-4 py-2 mr-4 md:mt-0 mt-2 bg-blue-600 text-blue font-medium text-sm leading-tight rounded-md border  bg-transparent font-Poppins  flex items-center border-[#114273] ">
+            <svg width="14" height="13" class="mr-1" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.99984 1.16699V11.8337M12.3332 6.50033H1.6665" stroke="#114273" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+            Add Query </button>
+          </div>
+
+
+          <div class="pt-5">
+            <form class="w-full md:w-1/2">
+              <div class="flex">
+              <div class="md:flex md:items-center w-1/2 mb-6">
+                <div class="md:w-1/3">
+                  <label class="block font-Poppins text-sm  text-[#263252] font-medium  mb-1 md:mb-0 pr-4" for="inline-full-name">
+                    Select
+                  </label>
+                </div>
+                <div class="md:w-2/3">
+                  <select class="px-3 py-1.5 text-xs w-full appearance-none bg-white border border-gray-300 font-Poppins font-normal text-[#263252]">
+                    <option>Lore </option>
+                    <option>Lore </option>
+                    <option>Lore </option>
+                    <option>Lore </option>
+                    <option>Lore </option>
+                  
+                  </select>
+                </div>
+              </div>
+
+              <div class="md:flex md:items-center w-1/2 pl-3 mb-6">
+                <div class="md:w-1/3">
+                  <label class="block font-Poppins text-sm  text-[#263252] font-medium  mb-1 md:mb-0 pr-4" for="inline-full-name">
+                    Form
+                  </label>
+                </div>
+                <div class="md:w-2/3">
+                  <select class="px-3 py-1.5 w-full text-xs appearance-none bg-white border border-gray-300 font-Poppins font-normal text-[#263252]">
+                    <option>Lore </option>
+                    <option>Lore </option>
+                    <option>Lore </option>
+                    <option>Lore </option>
+                    <option>Lore </option>
+                  
+                  </select>
+                </div>
+              </div>
+
+            </div>
+              
+            <div class="flex">
+              <div class="md:flex md:items-center w-1/2 mb-6">
+                <div class="md:w-1/3">
+                  <label class="block font-Poppins text-sm  text-[#263252] font-medium  mb-1 md:mb-0 pr-4" for="inline-full-name">
+                    Where :
+                  </label>
+                </div>
+                <div class="md:w-2/3">
+                  <select class="px-3 py-1.5 text-xs w-full appearance-none bg-white border border-gray-300 font-Poppins font-normal text-[#263252]">
+                    <option>Lore </option>
+                    <option>Lore </option>
+                    <option>Lore </option>
+                    <option>Lore </option>
+                    <option>Lore </option>
+                  
+                  </select>
+                </div>
+              </div>
+
+              <div class="md:flex md:items-center w-1/2 pl-3 mb-6">
+               <button class="bg-[#3CD2A5] w-6 h-6 flex items-center justify-center rounded-sm text-white p-2" type="button">
+                +
+                  
+               </button>
+              </div>
+
+            </div>
+            
+              
+            </form>
+          </div>
+    
+        </div>
+      </div>
+      </div>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <div class="rightsidmenu transition duration-700	 fixed -right-52 w-52 pt-6 h-full top-16 bg-[#FAFBFC] border-l border-[#E6E9EB]">
+    <div class="p-4">
+      <ul>
+        <li><a href="#" class="text-[#114273] font-Poppins font-normal text-sm">Activity Panel</a></li>
+      </ul>
+    </div>
+  </div>
+  <button class="p-2 rightbut bg-[#114273] rounded-tl-3xl rounded-bl-3xl absolute right-0 top-8 z-20">
+    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.909833 0.000206632C0.732476 -0.00369422 0.55831 0.0477192 0.411549 0.147378C0.264788 0.247037 0.152724 0.390016 0.0909381 0.556308C0.029152 0.722601 0.0207137 0.903987 0.0667959 1.0753C0.112878 1.24661 0.211191 1.39923 0.348067 1.51209L5.57065 5.9862L0.348067 10.4587C0.253383 10.5283 0.174088 10.6167 0.115147 10.7183C0.0562053 10.82 0.0188884 10.9327 0.00553196 11.0495C-0.00782444 11.1662 0.00306784 11.2845 0.0375265 11.3968C0.0719853 11.5091 0.129268 11.6132 0.205787 11.7024C0.282307 11.7915 0.376416 11.8639 0.482219 11.915C0.588022 11.9661 0.703241 11.9948 0.82066 11.9994C0.938079 12.0039 1.05517 11.9842 1.1646 11.9414C1.27402 11.8986 1.37343 11.8336 1.4566 11.7506L7.43598 6.63464C7.52988 6.55451 7.60528 6.45505 7.65698 6.34296C7.70869 6.23086 7.73546 6.10886 7.73546 5.98541C7.73546 5.86197 7.70869 5.73996 7.65698 5.62787C7.60528 5.51578 7.52988 5.41622 7.43598 5.33609L1.4566 0.215205C1.30555 0.0810394 1.11181 0.00476303 0.909833 9.74702e-06V0.000206632Z" fill="white"/>
+      </svg>
+      
+  </button>
+  </main>
+
+
+ 
+
+
+
+  <footer class="bg-bacgrediant fixed left-0 right-0 bottom-0 text-center p-2">
+<p class="text-sm font-Poppins font-normal text-white ">©  2022 Magnet Forensics Inc. <a href="#" class="font-medium underline-offset-1 underline"> Terms & Services </a> </p>
+  </footer>
+
+
+
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="node_modules/tw-elements/dist/js/index.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+  <script src="src/js/admin.js"></script>
+
+</body>
+
+</body>
+
+</html>
