@@ -100,7 +100,10 @@ aside.calc {  height: calc(100vh - 150px);}
   -ms-transform: rotate(45deg);
   transform: rotate(40deg);
 }
-
+#registryaccordion .accordion-button::after {
+  position: absolute;
+  left: 9px;
+}
 
 
 
