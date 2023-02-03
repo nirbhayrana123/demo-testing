@@ -451,7 +451,7 @@
         <h5 class="text-lg font-semibold font-Poppins  text-[#114273] ml-3">Select Process</h5>
       </div>
         <div class="model-left flex items-center">
-        <button type="button" class="bg-transparent flex justify-center items-center text-[#114273] text-sm font-medium  py-2 px-4 border border-[#114273]  rounded">
+        <button type="button" data-bs-target="#Savedbookmarks" data-bs-toggle="modal" class="bg-transparent flex justify-center items-center text-[#114273] text-sm font-medium  py-2 px-4 border border-[#114273]  rounded">
           <img class="mr-2" src="src/images/icons.svg"> Saved Bookmarks</button>
         </div>
       </div>
@@ -527,6 +527,208 @@
    </div>
  </div>
 <!---model--code--end-->
+
+
+ <!---Saved Bookmarks model-->
+ <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="Savedbookmarks" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
+  <div class="modal-dialog modal-lg relative w-auto pointer-events-none">
+    <div class="modal-content py-5 px-6 border border-[#EDF0F2] border-solid  shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-lg outline-none text-current">
+      <div class="modal-header flex flex-shrink-0 items-center justify-between mb-4 pb-4 border-b border-gray-200 rounded-t-md">
+        <div class="flex items-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12.2746C20 12.6543 19.7178 12.9681 19.3518 13.0178L19.25 13.0246L6.066 13.024L10.829 17.7675C11.1225 18.0598 11.1235 18.5347 10.8313 18.8282C10.5656 19.095 10.149 19.1201 9.85489 18.9029L9.77061 18.8305L3.72061 12.8065C3.68192 12.7679 3.64832 12.7263 3.61979 12.6822C3.61174 12.669 3.60354 12.6554 3.59576 12.6416C3.58861 12.6297 3.58215 12.6174 3.57606 12.605C3.56759 12.5869 3.55932 12.5681 3.55181 12.5491C3.5457 12.5343 3.54061 12.52 3.53596 12.5056C3.53043 12.4877 3.52506 12.4686 3.52045 12.4493C3.51701 12.4358 3.51429 12.4227 3.51192 12.4097C3.50859 12.3903 3.50575 12.3701 3.50372 12.3498C3.50197 12.3343 3.50092 12.3189 3.50034 12.3035C3.50019 12.2942 3.5 12.2844 3.5 12.2746L3.50038 12.2455C3.50095 12.2308 3.50196 12.2161 3.50339 12.2014L3.5 12.2746C3.5 12.2273 3.50438 12.181 3.51277 12.1361C3.51471 12.1253 3.51703 12.1143 3.51959 12.1034C3.52492 12.0808 3.53108 12.0591 3.53817 12.0377C3.54165 12.0272 3.5457 12.0158 3.55003 12.0046C3.5588 11.982 3.56833 11.9605 3.5788 11.9396C3.58367 11.9297 3.58912 11.9194 3.59484 11.9092C3.60421 11.8925 3.61386 11.8767 3.62407 11.8613C3.63128 11.8504 3.63925 11.839 3.64758 11.8278L3.65407 11.8192C3.67428 11.7928 3.6962 11.7677 3.71967 11.7443L3.72057 11.7436L9.77057 5.71857C10.0641 5.42629 10.5389 5.42727 10.8312 5.72077C11.0969 5.98759 11.1203 6.4043 10.9018 6.69746L10.829 6.78143L6.068 11.524L19.25 11.5246C19.6642 11.5246 20 11.8604 20 12.2746Z" fill="#263252"/>
+            </svg>
+        <h5 class="text-lg font-semibold font-Poppins  text-[#114273] ml-3">Saved Bookmarks</h5>
+      </div>
+      </div>
+    <div class="savedbody">
+<div class="flex items-center justify-between">
+<div class="w-8/12">
+  <form>   
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg aria-hidden="true" class="w-4 h-4 text-black dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+        <input type="search" id="default-search" class="block w-full p-3 pl-10 text-xs font-Poppins font-medium text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Bookmarks...">
+            </div>
+</form>
+</div>
+<div class="w-4/12 text-right">
+  <button type="button" class="px-4 w-28 text-center py-2 bg-blue-600 text-white font-medium text-sm leading-tight rounded-md border ml-auto border-[#00A682]  bg-[#3CD2A5]">
+    Next</button>
+</div>
+
+</div>
+<div class="overflow-auto max-h-[300px] mt-4 mb-3">
+  <table id="documents" class="display font-Poppins" style="width:100%">
+    <thead>
+      <tr class="bg-bron ">
+        <th
+          class=" px-5 font-Poppins py-3 text-black text-center text-sm  font-semibold ">
+            name
+        </th>
+        <th
+          class="px-5 font-Poppins py-3 text-black text-left text-sm  font-semibold">
+          Type
+        </th>
+        <th
+          class="px-5 py-3 font-Poppins text-black text-left text-sm  font-semibold">
+          Description
+        </th>
+        <th
+          class="px-5 py-3 font-Poppins text-black text-left text-sm  font-semibold">
+          Date Created
+        </th>
+       
+     
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-whight" >
+        <td class="px-5 py-5 font-Poppins font-medium text-tabcolor text-sm">
+          <div class="flex items-center">
+            <label class="round mr-3">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            Test Hunt 1
+        </div>
+        </td>
+        <td class="px-5 py-5 text-tabcolor text-sm font-Poppins font-normal">Hunt</td>
+        <td class="px-5 py-5 text-sm font-Poppins text-tabcolor">
+          analyzed on 28/05/2022, 8:45:00 AM
+        </td>
+        <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> 29th Aug, 2022 at 12: 42 </td>
+       
+      </tr>
+      <tr class="bg-dllstbbg" >
+        <td class="px-5 py-5 font-Poppins font-medium text-tabcolor text-sm">
+          <div class="flex items-center">
+            <label class="round mr-3">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>  Test Hunt 2
+        </div>
+        </td>
+        <td class="px-5 py-5 text-tabcolor text-sm font-Poppins font-normal">Diff</td>
+        <td class="px-5 py-5 text-sm font-Poppins text-tabcolor">
+          analyzed on 28/05/2022, 8:45:00 AM
+        </td>
+        <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> 29th Aug, 2022 at 12: 42 </td>
+       
+      </tr>
+     
+      <tr class="bg-whight" >
+        <td class="px-5 py-5 font-Poppins font-medium text-tabcolor text-sm">
+          <div class="flex items-center">
+            <label class="round mr-3">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            Test Hunt 1
+        </div>
+        </td>
+        <td class="px-5 py-5 text-tabcolor text-sm font-Poppins font-normal">Hunt</td>
+        <td class="px-5 py-5 text-sm font-Poppins text-tabcolor">
+          analyzed on 28/05/2022, 8:45:00 AM
+        </td>
+        <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> 29th Aug, 2022 at 12: 42 </td>
+       
+      </tr>
+      <tr class="bg-dllstbbg" >
+        <td class="px-5 py-5 font-Poppins font-medium text-tabcolor text-sm">
+          <div class="flex items-center">
+            <label class="round mr-3">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>  Test Hunt 2
+        </div>
+        </td>
+        <td class="px-5 py-5 text-tabcolor text-sm font-Poppins font-normal">Diff</td>
+        <td class="px-5 py-5 text-sm font-Poppins text-tabcolor">
+          analyzed on 28/05/2022, 8:45:00 AM
+        </td>
+        <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> 29th Aug, 2022 at 12: 42 </td>
+       
+      </tr>
+      <tr class="bg-whight" >
+        <td class="px-5 py-5 font-Poppins font-medium text-tabcolor text-sm">
+          <div class="flex items-center">
+            <label class="round mr-3">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            Test Hunt 1
+        </div>
+        </td>
+        <td class="px-5 py-5 text-tabcolor text-sm font-Poppins font-normal">Hunt</td>
+        <td class="px-5 py-5 text-sm font-Poppins text-tabcolor">
+          analyzed on 28/05/2022, 8:45:00 AM
+        </td>
+        <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> 29th Aug, 2022 at 12: 42 </td>
+       
+      </tr>
+      <tr class="bg-dllstbbg" >
+        <td class="px-5 py-5 font-Poppins font-medium text-tabcolor text-sm">
+          <div class="flex items-center">
+            <label class="round mr-3">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>  Test Hunt 2
+        </div>
+        </td>
+        <td class="px-5 py-5 text-tabcolor text-sm font-Poppins font-normal">Diff</td>
+        <td class="px-5 py-5 text-sm font-Poppins text-tabcolor">
+          analyzed on 28/05/2022, 8:45:00 AM
+        </td>
+        <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> 29th Aug, 2022 at 12: 42 </td>
+       
+      </tr>
+
+      <tr class="bg-whight" >
+        <td class="px-5 py-5 font-Poppins font-medium text-tabcolor text-sm">
+          <div class="flex items-center">
+            <label class="round mr-3">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            Test Hunt 1
+        </div>
+        </td>
+        <td class="px-5 py-5 text-tabcolor text-sm font-Poppins font-normal">Hunt</td>
+        <td class="px-5 py-5 text-sm font-Poppins text-tabcolor">
+          analyzed on 28/05/2022, 8:45:00 AM
+        </td>
+        <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> 29th Aug, 2022 at 12: 42 </td>
+       
+      </tr>
+      <tr class="bg-dllstbbg" >
+        <td class="px-5 py-5 font-Poppins font-medium text-tabcolor text-sm">
+          <div class="flex items-center">
+            <label class="round mr-3">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>  Test Hunt 2
+        </div>
+        </td>
+        <td class="px-5 py-5 text-tabcolor text-sm font-Poppins font-normal">Diff</td>
+        <td class="px-5 py-5 text-sm font-Poppins text-tabcolor">
+          analyzed on 28/05/2022, 8:45:00 AM
+        </td>
+        <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> 29th Aug, 2022 at 12: 42 </td>
+       
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
+    </div>
+    </div>   
+   </div>
+ </div>
+<!---Saved Bookmarks--end-->
 
 <!---Pending Invitations2 model-->
 <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="Pendinginvitations" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
