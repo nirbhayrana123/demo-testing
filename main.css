@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html,body{
+  font-family: 'Poppins';
+}
  #documents_length {  display: none;}
 #documents_filter {  display: none;}
 #documents_info {  display: none;}
@@ -44,7 +47,7 @@ button.viewbut.open+ .dropdown-content {  display: block;}
 
 .content {  visibility: hidden;}
  .toltipe:hover +.content {  visibility: visible;}
-
+ .modal {background: rgb(15 27 51 / 48%);}
 @media screen and (max-width: 639px) {
   .container {
     max-width: 100%;
