@@ -2,25 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+html,body{
+  font-family: 'Poppins';
+}
  #documents_length {  display: none;}
 #documents_filter {  display: none;}
 #documents_info {  display: none;}
 #documents_paginate {  display: none;}
 .rightsidmenu.right {  right: 0;}
 .filtercustome.open {  display: block;}
-.hometabl table.dataTable tbody th, .hometabl table.dataTable tbody td {  padding: 20px 10px;}
+table.dataTable tbody td { padding: 20px 10px;}
 .autoruns table.dataTable tbody th, .autoruns table.dataTable tbody td {  padding: 20px 10px;}
  .tableview table.dataTable tbody td {  padding: 20px 10px;}
+ button.compae.rduser svg {  transform: rotate(180deg);}
+ button.compae svg { transition: 0.5s;}
 .tablet .tableview table.dataTable tbody th, .tablet .tableview table.dataTable tbody td {  padding: 8px 10px;}
-
+span.notifuntiontolltip { visibility: hidden;}
+.notifuntionhover:hover span.notifuntiontolltip { visibility: visible;}
 table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td { border: none;
 }
+.cutstomehover:hover svg {fill: #fff;}
+.cutstomehover:hover svg path {stroke: #fff;}
 .menus .active::after { content: ""; position: absolute; left: 0; width: 6px; height: 100%; background-color: #114273; border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
 .nav-item a.active .bxo {  box-shadow: 0px 15px 6px rgb(36 50 86 / 1%), 0px 9px 5px rgb(36 50 86 / 3%), 0px 4px 4px rgb(36 50 86 / 4%), 0px 1px 2px rgb(36 50 86 / 5%), 0px 0px 0px rgb(36 50 86 / 5%);}
 .nav-item a.active .bxo::after { content: ""; width: 10px; height: 100%; background-color: #27AE60;  position: absolute; top: 0; right: -5px; border-top-right-radius: 4px; border-bottom-right-radius: 4px;}
 .cstometab li a.nav-link.active { color: #000;  border-color: #000;}
 .custometabl li.nav-item .nav-link.active { background-color: #fff; color: #114273;}
 aside.calc {  height: calc(100vh - 150px);}
+.nottolltip{visibility: hidden;}
+.notepadtoll:hover .nottolltip {visibility: visible;}
+
 
 
 
@@ -33,6 +44,62 @@ aside.calc {  height: calc(100vh - 150px);}
 .tableview::-webkit-scrollbar-thumb,.viewjsn::-webkit-scrollbar-thumb{border-radius: 5px;	background-color: #114273;}
 
 
+.round {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+.round input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 15px;
+   border: 1px solid #eee;
+}
+
+
+.round input:checked ~ .checkmark {
+  background-color: #3cd2a5;
+}
+.round input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.round .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 7px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(40deg);
+}
 
 
 
@@ -44,7 +111,9 @@ button.viewbut.open+ .dropdown-content {  display: block;}
 
 .content {  visibility: hidden;}
  .toltipe:hover +.content {  visibility: visible;}
-
+ .succestol{visibility: hidden;}
+.succesfulfi:hover .succestol{visibility: visible;}
+ .modal {background: rgb(15 27 51 / 48%);}
 @media screen and (max-width: 639px) {
   .container {
     max-width: 100%;
