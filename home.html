@@ -17,7 +17,7 @@
 <body class="box-border ">
   <!-- component -->
   <div class="w-full h-full">
-    <!--header-->
+  <!--///////////////////////////////////////////header////////////////////////////////////////---->
     <header class="px-4 py-2 header mr-0 fixed bg-[#F8FAFB] top-0 right-0 w-full z-50 ">
       <div class="flex bg-bacgrediant rounded-lg  top-0 left-0 right-0 items-center justify-between md:px-6 px-4 py-3">
         <div class=" relative lg:w-full lg:max-w-md flex items-center">
@@ -168,14 +168,19 @@
       </div>
     </div>
        </header>
+         <!--///////////////////////////////////////////header End////////////////////////////////////////---->
   </div>
  
-  <!--header end--> 
+
    
   <main class="  xl:mt-14 mt-20  md:px-10 px-4 relative pt-10 pb-6 min-h-screen 	">
+     <!-----///////////////////////////breadcrumbs//////////////////---->
     <a href="home.html" class="flex items-center font-Poppins font-medium text-sm text-[#263252]"><svg width="14" height="15" class="mr-1" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M5.3286 12.6176V10.8339C5.3286 10.3786 5.70041 10.0095 6.15907 10.0095H7.83567C8.05592 10.0095 8.26716 10.0964 8.4229 10.251C8.57864 10.4056 8.66614 10.6153 8.66614 10.8339V12.6176C8.66474 12.8069 8.73952 12.9889 8.87386 13.1233C9.00821 13.2576 9.19101 13.3332 9.3817 13.3332H10.5255C11.0598 13.3345 11.5726 13.1248 11.9508 12.7503C12.3291 12.3758 12.5416 11.8672 12.5416 11.3369V6.2555C12.5416 5.82711 12.3504 5.42074 12.0193 5.14589L8.12816 2.06076C7.45128 1.51983 6.48146 1.5373 5.82479 2.10224L2.0224 5.14589C1.67575 5.41264 1.46855 5.82021 1.45831 6.2555V11.3317C1.45831 12.4371 2.36095 13.3332 3.47441 13.3332H4.59215C4.9882 13.3332 5.31006 13.016 5.31293 12.6228L5.3286 12.6176Z" fill="#263252"/>
       </svg> Home /</a>
+          <!-----///////////////////////////breadcrumbs End//////////////////---->
+
+          <!-----///////////////////////////head button //////////////////---->
     <div class="md:flex flex-wrap space-x-2 mt-5 justify-between items-center">
       <h1 class="font-semibold text-2xl  text-blue ">Your Cases</h1>
       <div class="flex flex-wrap items-center mt-3 lg:mt-0 ">
@@ -193,15 +198,17 @@
               Add new cases</button>
       </div>
     </div>
+<!-----///////////////////////////head button End//////////////////---->
+<!-----///////////////////////////Card //////////////////---->
 
     <div class="allcard justify-start mt-4 flex flex-wrap">
       <div class="w-full md:w-1/2 lg:w-1/3 xl:w-3/12 mb-3 sm:pr-3 pr-0">
-<div class="card p-4 cursor-pointer bg-white border-[#E0E0E0] rounded-md border">
+<div class="card p-4 cursor-pointer bg-white border-[#E0E0E0] hover:-translate-y-2 hover:shadow-lg rounded-md border">
   <div class="flex ">
    <img src="src/images/file.svg" class="mr-2">
     
     <div class="text">
-      <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="#" class="ml-2">
+      <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="caseflow.html" class="ml-2">
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M9.49997 6.02298C9.22348 6.02298 9 6.24701 9 6.52295V10.523C9 10.7985 8.77597 11.0229 8.50003 11.0229H1.5C1.22397 11.0229 1.00003 10.7985 1.00003 10.523V3.52295C1.00003 3.24747 1.22397 3.02298 1.5 3.02298H5.50003C5.77652 3.02298 6 2.79895 6 2.52301C6 2.24698 5.77652 2.02295 5.50003 2.02295H1.5C0.673004 2.02295 0 2.69595 0 3.52295V10.523C0 11.35 0.673004 12.023 1.5 12.023H8.50003C9.32703 12.023 10 11.35 10 10.523V6.52295C10 6.24646 9.77646 6.02298 9.49997 6.02298Z" fill="#8C8C8C"/>
         <path d="M4.68797 5.56781C4.653 5.60278 4.62947 5.64728 4.61949 5.69525L4.26601 7.46332C4.24953 7.54526 4.27553 7.62976 4.33449 7.68927C4.382 7.73679 4.446 7.76224 4.51155 7.76224C4.52748 7.76224 4.54405 7.76077 4.56053 7.75729L6.32805 7.40381C6.37703 7.39374 6.42152 7.3703 6.45604 7.33524L10.412 3.37924L8.64451 1.61182L4.68797 5.56781Z" fill="#8C8C8C"/>
@@ -235,12 +242,12 @@
 </div>
 </div>
 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-3/12 mb-4  sm:pr-4 pr-0">
-  <div class="card p-4 cursor-pointer  bg-white border-[#E0E0E0] rounded-md border ">
+  <div class="card p-4 cursor-pointer hover:-translate-y-2 hover:shadow-lg  bg-white border-[#E0E0E0] rounded-md border ">
     <div class="flex ">
      <img src="src/images/file.svg" class="mr-2">
       
       <div class="text">
-        <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="#" class="ml-2">
+        <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="caseflow.html" class="ml-2">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.49997 6.02298C9.22348 6.02298 9 6.24701 9 6.52295V10.523C9 10.7985 8.77597 11.0229 8.50003 11.0229H1.5C1.22397 11.0229 1.00003 10.7985 1.00003 10.523V3.52295C1.00003 3.24747 1.22397 3.02298 1.5 3.02298H5.50003C5.77652 3.02298 6 2.79895 6 2.52301C6 2.24698 5.77652 2.02295 5.50003 2.02295H1.5C0.673004 2.02295 0 2.69595 0 3.52295V10.523C0 11.35 0.673004 12.023 1.5 12.023H8.50003C9.32703 12.023 10 11.35 10 10.523V6.52295C10 6.24646 9.77646 6.02298 9.49997 6.02298Z" fill="#8C8C8C"/>
           <path d="M4.68797 5.56781C4.653 5.60278 4.62947 5.64728 4.61949 5.69525L4.26601 7.46332C4.24953 7.54526 4.27553 7.62976 4.33449 7.68927C4.382 7.73679 4.446 7.76224 4.51155 7.76224C4.52748 7.76224 4.54405 7.76077 4.56053 7.75729L6.32805 7.40381C6.37703 7.39374 6.42152 7.3703 6.45604 7.33524L10.412 3.37924L8.64451 1.61182L4.68797 5.56781Z" fill="#8C8C8C"/>
@@ -274,12 +281,12 @@
   </div>
   </div>
   <div class="w-full md:w-1/2 lg:w-1/3 xl:w-3/12 mb-4 sm:pr-4 pr-0">
-    <div class="card p-4 cursor-pointer  bg-white border-[#E0E0E0] rounded-md border ">
+    <div class="card p-4 cursor-pointer hover:-translate-y-2 hover:shadow-lg bg-white border-[#E0E0E0] rounded-md border ">
       <div class="flex ">
        <img src="src/images/file.svg" class="mr-2">
         
         <div class="text">
-          <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="#" class="ml-2">
+          <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="caseflow.html" class="ml-2">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.49997 6.02298C9.22348 6.02298 9 6.24701 9 6.52295V10.523C9 10.7985 8.77597 11.0229 8.50003 11.0229H1.5C1.22397 11.0229 1.00003 10.7985 1.00003 10.523V3.52295C1.00003 3.24747 1.22397 3.02298 1.5 3.02298H5.50003C5.77652 3.02298 6 2.79895 6 2.52301C6 2.24698 5.77652 2.02295 5.50003 2.02295H1.5C0.673004 2.02295 0 2.69595 0 3.52295V10.523C0 11.35 0.673004 12.023 1.5 12.023H8.50003C9.32703 12.023 10 11.35 10 10.523V6.52295C10 6.24646 9.77646 6.02298 9.49997 6.02298Z" fill="#8C8C8C"/>
             <path d="M4.68797 5.56781C4.653 5.60278 4.62947 5.64728 4.61949 5.69525L4.26601 7.46332C4.24953 7.54526 4.27553 7.62976 4.33449 7.68927C4.382 7.73679 4.446 7.76224 4.51155 7.76224C4.52748 7.76224 4.54405 7.76077 4.56053 7.75729L6.32805 7.40381C6.37703 7.39374 6.42152 7.3703 6.45604 7.33524L10.412 3.37924L8.64451 1.61182L4.68797 5.56781Z" fill="#8C8C8C"/>
@@ -313,12 +320,12 @@
     </div>
     </div>
     <div class="w-full md:w-1/2 lg:w-1/3 xl:w-3/12 mb-4  sm:pr-4 pr-0 ">
-      <div class="card cursor-pointer p-4  bg-white border-[#E0E0E0] rounded-md border ">
+      <div class="card cursor-pointer hover:-translate-y-2 hover:shadow-lg p-4  bg-white border-[#E0E0E0] rounded-md border ">
         <div class="flex ">
          <img src="src/images/file.svg" class="mr-2">
           
           <div class="text">
-            <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="#" class="ml-2">
+            <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="caseflow.html" class="ml-2">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.49997 6.02298C9.22348 6.02298 9 6.24701 9 6.52295V10.523C9 10.7985 8.77597 11.0229 8.50003 11.0229H1.5C1.22397 11.0229 1.00003 10.7985 1.00003 10.523V3.52295C1.00003 3.24747 1.22397 3.02298 1.5 3.02298H5.50003C5.77652 3.02298 6 2.79895 6 2.52301C6 2.24698 5.77652 2.02295 5.50003 2.02295H1.5C0.673004 2.02295 0 2.69595 0 3.52295V10.523C0 11.35 0.673004 12.023 1.5 12.023H8.50003C9.32703 12.023 10 11.35 10 10.523V6.52295C10 6.24646 9.77646 6.02298 9.49997 6.02298Z" fill="#8C8C8C"/>
               <path d="M4.68797 5.56781C4.653 5.60278 4.62947 5.64728 4.61949 5.69525L4.26601 7.46332C4.24953 7.54526 4.27553 7.62976 4.33449 7.68927C4.382 7.73679 4.446 7.76224 4.51155 7.76224C4.52748 7.76224 4.54405 7.76077 4.56053 7.75729L6.32805 7.40381C6.37703 7.39374 6.42152 7.3703 6.45604 7.33524L10.412 3.37924L8.64451 1.61182L4.68797 5.56781Z" fill="#8C8C8C"/>
@@ -352,12 +359,12 @@
       </div>
       </div>
       <div class="w-full md:w-1/2 lg:w-1/3 xl:w-3/12 mb-4 sm:pr-4 pr-0">
-        <div class="card p-4 cursor-pointer bg-white border-[#E0E0E0] rounded-md border ">
+        <div class="card p-4 cursor-pointer hover:-translate-y-2 hover:shadow-lg bg-white border-[#E0E0E0] rounded-md border ">
           <div class="flex ">
            <img src="src/images/file.svg" class="mr-2">
             
             <div class="text">
-              <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="#" class="ml-2">
+              <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="caseflow.html" class="ml-2">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.49997 6.02298C9.22348 6.02298 9 6.24701 9 6.52295V10.523C9 10.7985 8.77597 11.0229 8.50003 11.0229H1.5C1.22397 11.0229 1.00003 10.7985 1.00003 10.523V3.52295C1.00003 3.24747 1.22397 3.02298 1.5 3.02298H5.50003C5.77652 3.02298 6 2.79895 6 2.52301C6 2.24698 5.77652 2.02295 5.50003 2.02295H1.5C0.673004 2.02295 0 2.69595 0 3.52295V10.523C0 11.35 0.673004 12.023 1.5 12.023H8.50003C9.32703 12.023 10 11.35 10 10.523V6.52295C10 6.24646 9.77646 6.02298 9.49997 6.02298Z" fill="#8C8C8C"/>
                 <path d="M4.68797 5.56781C4.653 5.60278 4.62947 5.64728 4.61949 5.69525L4.26601 7.46332C4.24953 7.54526 4.27553 7.62976 4.33449 7.68927C4.382 7.73679 4.446 7.76224 4.51155 7.76224C4.52748 7.76224 4.54405 7.76077 4.56053 7.75729L6.32805 7.40381C6.37703 7.39374 6.42152 7.3703 6.45604 7.33524L10.412 3.37924L8.64451 1.61182L4.68797 5.56781Z" fill="#8C8C8C"/>
@@ -391,12 +398,12 @@
         </div>
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3 xl:w-3/12 mb-4  sm:pr-4 pr-0">
-          <div class="card p-4 cursor-pointer bg-white border-[#E0E0E0] rounded-md border ">
+          <div class="card p-4 hover:-translate-y-2 hover:shadow-lg cursor-pointer bg-white border-[#E0E0E0] rounded-md border ">
             <div class="flex ">
              <img src="src/images/file.svg" class="mr-2">
               
               <div class="text">
-                <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="#" class="ml-2">
+                <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="caseflow.html" class="ml-2">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.49997 6.02298C9.22348 6.02298 9 6.24701 9 6.52295V10.523C9 10.7985 8.77597 11.0229 8.50003 11.0229H1.5C1.22397 11.0229 1.00003 10.7985 1.00003 10.523V3.52295C1.00003 3.24747 1.22397 3.02298 1.5 3.02298H5.50003C5.77652 3.02298 6 2.79895 6 2.52301C6 2.24698 5.77652 2.02295 5.50003 2.02295H1.5C0.673004 2.02295 0 2.69595 0 3.52295V10.523C0 11.35 0.673004 12.023 1.5 12.023H8.50003C9.32703 12.023 10 11.35 10 10.523V6.52295C10 6.24646 9.77646 6.02298 9.49997 6.02298Z" fill="#8C8C8C"/>
                   <path d="M4.68797 5.56781C4.653 5.60278 4.62947 5.64728 4.61949 5.69525L4.26601 7.46332C4.24953 7.54526 4.27553 7.62976 4.33449 7.68927C4.382 7.73679 4.446 7.76224 4.51155 7.76224C4.52748 7.76224 4.54405 7.76077 4.56053 7.75729L6.32805 7.40381C6.37703 7.39374 6.42152 7.3703 6.45604 7.33524L10.412 3.37924L8.64451 1.61182L4.68797 5.56781Z" fill="#8C8C8C"/>
@@ -430,12 +437,12 @@
           </div>
           </div>
           <div class="w-full md:w-1/2 lg:w-1/3 xl:w-3/12 mb-4 sm:pr-4 pr-0">
-            <div class="card p-4 cursor-pointer bg-white border-[#E0E0E0] rounded-md border ">
+            <div class="card p-4 hover:-translate-y-2 hover:shadow-lg cursor-pointer bg-white border-[#E0E0E0] rounded-md border ">
               <div class="flex ">
                <img src="src/images/file.svg" class="mr-2">
                 
                 <div class="text">
-                  <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="#" class="ml-2">
+                  <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="caseflow.html" class="ml-2">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.49997 6.02298C9.22348 6.02298 9 6.24701 9 6.52295V10.523C9 10.7985 8.77597 11.0229 8.50003 11.0229H1.5C1.22397 11.0229 1.00003 10.7985 1.00003 10.523V3.52295C1.00003 3.24747 1.22397 3.02298 1.5 3.02298H5.50003C5.77652 3.02298 6 2.79895 6 2.52301C6 2.24698 5.77652 2.02295 5.50003 2.02295H1.5C0.673004 2.02295 0 2.69595 0 3.52295V10.523C0 11.35 0.673004 12.023 1.5 12.023H8.50003C9.32703 12.023 10 11.35 10 10.523V6.52295C10 6.24646 9.77646 6.02298 9.49997 6.02298Z" fill="#8C8C8C"/>
                     <path d="M4.68797 5.56781C4.653 5.60278 4.62947 5.64728 4.61949 5.69525L4.26601 7.46332C4.24953 7.54526 4.27553 7.62976 4.33449 7.68927C4.382 7.73679 4.446 7.76224 4.51155 7.76224C4.52748 7.76224 4.54405 7.76077 4.56053 7.75729L6.32805 7.40381C6.37703 7.39374 6.42152 7.3703 6.45604 7.33524L10.412 3.37924L8.64451 1.61182L4.68797 5.56781Z" fill="#8C8C8C"/>
@@ -469,12 +476,12 @@
             </div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/3 xl:w-3/12 mb-4 sm:pr-4 pr-0 ">
-              <div class="card p-4 cursor-pointer bg-white border-[#E0E0E0] rounded-md border ">
+              <div class="card p-4 hover:-translate-y-2 hover:shadow-lg cursor-pointer bg-white border-[#E0E0E0] rounded-md border ">
                 <div class="flex ">
                  <img src="src/images/file.svg" class="mr-2">
                   
                   <div class="text">
-                    <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="#" class="ml-2">
+                    <h2 class="flex items-center font-Poppins font-semibold text-sm text-black">First Case <a href="caseflow.html" class="ml-2">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M9.49997 6.02298C9.22348 6.02298 9 6.24701 9 6.52295V10.523C9 10.7985 8.77597 11.0229 8.50003 11.0229H1.5C1.22397 11.0229 1.00003 10.7985 1.00003 10.523V3.52295C1.00003 3.24747 1.22397 3.02298 1.5 3.02298H5.50003C5.77652 3.02298 6 2.79895 6 2.52301C6 2.24698 5.77652 2.02295 5.50003 2.02295H1.5C0.673004 2.02295 0 2.69595 0 3.52295V10.523C0 11.35 0.673004 12.023 1.5 12.023H8.50003C9.32703 12.023 10 11.35 10 10.523V6.52295C10 6.24646 9.77646 6.02298 9.49997 6.02298Z" fill="#8C8C8C"/>
                       <path d="M4.68797 5.56781C4.653 5.60278 4.62947 5.64728 4.61949 5.69525L4.26601 7.46332C4.24953 7.54526 4.27553 7.62976 4.33449 7.68927C4.382 7.73679 4.446 7.76224 4.51155 7.76224C4.52748 7.76224 4.54405 7.76077 4.56053 7.75729L6.32805 7.40381C6.37703 7.39374 6.42152 7.3703 6.45604 7.33524L10.412 3.37924L8.64451 1.61182L4.68797 5.56781Z" fill="#8C8C8C"/>
@@ -508,7 +515,10 @@
               </div>
               </div>
     </div>
+<!-----///////////////////////////Card End//////////////////---->
 
+
+<!-----///////////////////////////filter //////////////////---->
 
     <div class="md:flex flex-wrap space-x-2 mt-5 justify-between items-center">
       <h1 class="font-semibold text-2xl  text-blue ">Latest Snapshots</h1>
@@ -538,7 +548,7 @@
         </form>
           
 
-        <div class="filtercustome z-10 max-w-md hidden absolute top-10 right-0  bg-white rounded-xl shadow-lg p-3">
+        <div class="filtercustome max-w-lg hidden fixed overflow-y-auto h-full top-0 z-50 right-0 bg-white rounded-tl-2xl rounded-bl-2xl shadow-lg p-3">
           <div class=" flex items-center pb-6 border-b boder-[#E6E9EB] justify-between">
            <p class="text-[#263252] text-sm font-Poppins flex items-center font-semibold">
             <svg class="mr-1" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -612,6 +622,9 @@
          </div>
           </div>
       </div>
+<!-----///////////////////////////filter End//////////////////---->
+
+<!-----///////////////////////////multiselect //////////////////---->
 
       <div class="flex flex-auto flex-wrap my-4">
         <div class="flex justify-center items-center m-1 font-medium py-1.5 w-36 px-2 bg-white rounded-full text-[#263252]  border border-[#D7DADB] ">
@@ -692,7 +705,8 @@
     </div>
 </div>
     </div>
-
+<!-----///////////////////////////multiselect End//////////////////---->
+<!-----///////////////////////////table//////////////////---->
 
     <div class="overflow-auto">
       <table id="documents" class="display hometabl font-Poppins" style="width:100%">
@@ -1077,7 +1091,8 @@ analyzed on 28/05/2022, 8:45:00 AM
       </table>
     </div>
 
-
+<!-----///////////////////////////table End//////////////////---->
+<!-----///////////////////////////pagination //////////////////---->
     <div class="docomentinfo sm:flex flex-wrap mt-10 mb-16  items-center justify-center sm:justify-between">      
       <div class="itemdisplay justify-center sm:justify-start flex items-center "> 
         <div class="relative">
@@ -1139,7 +1154,9 @@ analyzed on 28/05/2022, 8:45:00 AM
       <p class="text-[10px] text-black font-Poppins font-normal">Showing 1 to 10 of 49 entries</p>
     </div>
     </div>
-  
+  <!-----///////////////////////////pagination End//////////////////---->
+
+   <!-----///////////////////////////rightsidmenu //////////////////---->
   <div class="rightsidmenu transition duration-700	 fixed -right-52 w-52 pt-6 h-full top-16 bg-[#FAFBFC] border-l border-[#E6E9EB]">
     <div class="p-4">
       <ul>
@@ -1153,17 +1170,18 @@ analyzed on 28/05/2022, 8:45:00 AM
       </svg>
       
   </button>
+    <!-----///////////////////////////rightsidmenu End//////////////////---->
   </main>
 
 
  
 
 
-
+    <!-----///////////////////////////Footer //////////////////---->
   <footer class="bg-bacgrediant fixed left-0 right-0 bottom-0 text-center p-2">
 <p class="text-sm font-Poppins font-normal text-white ">©  2022 Magnet Forensics Inc. <a href="#" class="font-medium underline-offset-1 underline"> Terms & Services </a> </p>
   </footer>
-
+<!-----///////////////////////////Footer End//////////////////---->
 
 <!--------------------------uplodemodal-------------------------------->
   <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalLg" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
@@ -1497,7 +1515,7 @@ analyzed on 28/05/2022, 8:45:00 AM
 
 
 
- <!---Create New Cases model-->
+ <!---////////////////////Create New Cases model///////////////////-->
  <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="CreateNewCases" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
   <div class="modal-dialog modal-lg relative w-auto pointer-events-none">
     <div class="modal-content py-5 px-6 border border-[#EDF0F2] border-solid  shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-lg outline-none text-current">
@@ -1554,11 +1572,11 @@ analyzed on 28/05/2022, 8:45:00 AM
           
       </div>
     </div>
-<!---model--code--end-->
+<!---//////////////////////Create New Cases model//////////////////////////////////-->
 
 
 
-<!---Pending Invitations2 model-->
+<!---//////////////////////////Pending Invitations2 model////////////////////////////-->
 <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="Pendinginvitations" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
   <div class="modal-dialog modal-lg relative w-auto pointer-events-none">
     <div class="modal-content py-5 px-6 border border-[#EDF0F2] border-solid  shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-lg outline-none text-current">
@@ -1603,10 +1621,10 @@ analyzed on 28/05/2022, 8:45:00 AM
       </div>
     </div>
   </div>
-<!---model--code--end-->
+<!---//////////////////////////Pending Invitations2 model end//////////////////////////////////////////////-->
 
 
-<!---Manage Organisation Users model-->
+<!---///////////////////////////////Manage Organisation Users model/////////////////////////////-->
 <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="Organisationuser" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
   <div class="modal-dialog modal-lg relative w-auto pointer-events-none">
     <div class="modal-content py-5 px-6 border border-[#EDF0F2] border-solid  shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-lg outline-none text-current">
@@ -1659,7 +1677,7 @@ analyzed on 28/05/2022, 8:45:00 AM
           
       </div>
     </div>
-<!---model--code--end-->
+<!---/////////////////////////////Manage Organisation Users model end///////////////////////////////////////-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="node_modules/tw-elements/dist/js/index.min.js"></script>
