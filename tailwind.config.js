@@ -38,8 +38,8 @@ module.exports = {
         'green':'#00A682',
         'grey': '#EDF0F2',
         'same':'rgba(111, 207, 151, 0.2)',
-
-
+        'black':'#263252',
+        'dark-grey':'#737A80',
 
 
 

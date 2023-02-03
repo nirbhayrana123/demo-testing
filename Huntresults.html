@@ -179,7 +179,7 @@
           </form>
              <!---button--run-hunt--start-->
              <div class="flex items-center xl:mt-0 mt-3 flex-wrap ">        
-            <button type="button" class="px-4 ml-2.5 font-Poppins md:mt-0 mt-2 py-2 mr-4 bg-blue-600 text-blue font-medium text-sm leading-tight rounded-md border  bg-transparent    flex items-center border-[#114273] ">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#SaveHuntDetails" class="px-4 ml-2.5 font-Poppins md:mt-0 mt-2 py-2 mr-4 bg-blue-600 hover:bg-[#eaecf5] text-blue font-medium text-sm leading-tight rounded-md border  bg-transparent    flex items-center border-[#114273] ">
               <svg width="16" class="mr-1" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.6667 1.80115H14.7146V1.08469C14.7146 0.951173 14.6349 0.83055 14.5121 0.77811C12.5013 -0.0802631 10.0273 0.283534 7.99998 1.72146C5.97269 0.283534 3.49866 -0.0801615 1.48793 0.77811C1.3651 0.83055 1.28544 0.951173 1.28544 1.08469V1.80115H0.333328C0.149263 1.80115 0 1.95038 0 2.13448V11.3479C0 11.532 0.149263 11.6813 0.333328 11.6813H8.00002H15.6667C15.8508 11.6813 16 11.532 16 11.3479V2.13451C16 1.95041 15.8508 1.80115 15.6667 1.80115ZM0.666657 11.0146V2.46784H1.28544V10.2981C1.28544 10.4101 1.34168 10.5146 1.43508 10.5763C1.52852 10.638 1.64663 10.6486 1.74962 10.6047C3.31097 9.93817 5.19652 10.1049 6.87007 11.0146H0.666657ZM7.66669 10.7106C6.4501 9.93533 5.09678 9.5328 3.79045 9.5328C3.15978 9.5328 2.54015 9.62661 1.95213 9.81762V2.13837C1.95213 2.13705 1.95234 2.1358 1.95234 2.13451C1.95234 2.13323 1.95217 2.13194 1.95213 2.13065V1.31016C3.73005 0.643776 5.88589 1.01644 7.66669 2.3026V10.7106ZM8.33335 2.3026C10.1141 1.01641 12.2701 0.643776 14.0479 1.31016V2.13062C14.0479 2.13191 14.0477 2.13319 14.0477 2.13448C14.0477 2.13576 14.0479 2.13705 14.0479 2.13834V9.81755C12.2418 9.23089 10.1372 9.56107 8.33335 10.7106V2.3026ZM15.3333 11.0146H9.1299C10.8035 10.1049 12.689 9.93821 14.2504 10.6047C14.3534 10.6487 14.4716 10.638 14.5649 10.5763C14.6584 10.5146 14.7146 10.4101 14.7146 10.2981V2.46784H15.3333V11.0146Z" fill="#114273"></path>
                 </svg>
@@ -188,7 +188,7 @@
              
                
         
-              <button type="button" data-bs-toggle="modal" data-bs-target="#SaveHuntDetails" class="px-12  md:mt-0 mt-2 py-2 bg-blue-600 text-white font-medium text-sm leading-tight rounded-md border font-Poppins flex items-center border-[#3CD2A5]  bg-[#3CD2A5]">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#SaveHuntDetails" class="px-12  md:mt-0 mt-2 py-2 bg-blue-600 text-white font-medium text-sm leading-tight rounded-md border font-Poppins flex items-center border-[#3CD2A5] hover:bg-[#21aa8b]  bg-[#3CD2A5]">
                 Save</button>
                 </div>
   
@@ -324,8 +324,12 @@
                   </button> 29th Aug, 2022 at 12: 42
               </td>
               <td class="px-5 py-5 text-tabcolor text-sm font-Poppins font-normal"> Notepad.exe.dmp.zip</td>
-              <td class="px-5 py-5 text-sm font-Poppins text-tabcolor">
+              <td class="px-5 py-5 Snapshottip relative text-sm font-Poppins text-tabcolor">
                 Snapshot of notepad.exe.dmp.zip....
+                <div class="snapshottoltip rounded-md bg-[#737A80] text-center p-0.5 w-[192px] absolute left-5 top-12 ">
+                  <p class="text-[10px] font-Poppins font-normal text-white">Snapshot of notepad.exe.dmp.zip,
+                    analyzed on 28/05/2022, 8:45:00 AM</p>
+                 </div>
               </td>
               <td class="px-5 py-5 text-sm font-Poppins font-normal text-darkblu"> <a href="#" class="underline">Trickbot Case Study</a> </td>
               <td> 
@@ -400,8 +404,12 @@
                   </button>  29th Aug, 2022 at 12: 42
               </td>
               <td class="px-5 py-5 text-sm text-tabcolor font-Poppins font-normal"> Notepad.exe.dmp.zip</td>
-              <td class="px-5 py-5 text-sm">
+              <td class="px-5 relative Snapshottip py-5 text-sm">
                 Snapshot of notepad.exe.dmp.zip....
+                <div class="snapshottoltip rounded-md bg-[#737A80] text-center p-0.5 w-[192px] absolute left-5 top-12 ">
+                  <p class="text-[10px] font-Poppins font-normal text-white">Snapshot of notepad.exe.dmp.zip,
+                    analyzed on 28/05/2022, 8:45:00 AM</p>
+                 </div>
               </td>
               <td class="px-5 py-5 text-sm font-Poppins text-darkblu font-normal"><a href="#" class="underline">Trickbot Case Study</a> </td>
               <td> 
@@ -477,8 +485,12 @@
                   </button>  29th Aug, 2022 at 12: 42
               </td>
               <td class="px-5 py-5 text-sm font-Poppins text-tabcolor font-normal"> Notepad.exe.dmp.zip</td>
-              <td class="px-5 py-5 text-sm font-normal font-Poppins text-tabcolor">
+              <td class="px-5 py-5 Snapshottip relative text-sm font-normal font-Poppins text-tabcolor">
                 Snapshot of notepad.exe.dmp.zip....
+                <div class="snapshottoltip rounded-md bg-[#737A80] text-center p-0.5 w-[192px] absolute left-5 top-12 ">
+                  <p class="text-[10px] font-Poppins font-normal text-white">Snapshot of notepad.exe.dmp.zip,
+                    analyzed on 28/05/2022, 8:45:00 AM</p>
+                 </div>
               </td>
               <td class="px-5 py-5 text-sm font-Poppins font-normal text-darkblu"><a href="#" class="underline">Trickbot Case Study</a>  </td>
               <td> 
@@ -553,8 +565,12 @@
                   </button>  29th Aug, 2022 at 12: 42
               </td>
               <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> Notepad.exe.dmp.zip </td>
-              <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor">
+              <td class="px-5 py-5 relative Snapshottip text-sm font-Poppins font-normal text-tabcolor">
                 Snapshot of notepad.exe.dmp.zip....
+                <div class="snapshottoltip rounded-md bg-[#737A80] text-center p-0.5 w-[192px] absolute left-5 top-12 ">
+                  <p class="text-[10px] font-Poppins font-normal text-white">Snapshot of notepad.exe.dmp.zip,
+                    analyzed on 28/05/2022, 8:45:00 AM</p>
+                 </div>
               </td>
               <td class="px-5 py-5 text-sm font-Poppins font-normal text-darkblu"> <a href="#" class="underline">Trickbot Case Study</a> </td>
               <td> 
@@ -629,8 +645,12 @@
                   </button>  29th Aug, 2022 at 12: 42
               </td>
               <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> Notepad.exe.dmp.zip </td>
-              <td class="px-5 py-5 text-sm text-tabcolor font-Poppins font-normal">
+              <td class="px-5 relative Snapshottip py-5 text-sm text-tabcolor font-Poppins font-normal">
                 Snapshot of notepad.exe.dmp.zip....
+                <div class="snapshottoltip rounded-md bg-[#737A80] text-center p-0.5 w-[192px] absolute left-5 top-12 ">
+                  <p class="text-[10px] font-Poppins font-normal text-white">Snapshot of notepad.exe.dmp.zip,
+                    analyzed on 28/05/2022, 8:45:00 AM</p>
+                 </div>
               </td>
               <td class="px-5 py-5 text-sm font-Poppins font-normal text-darkblu"> <a href="#" class="underline">Trickbot Case Study</a>  </td>
               <td> 
@@ -707,8 +727,12 @@
                   </button>  29th Aug, 2022 at 12: 42
               </td>
               <td class="px-5 py-5 text-sm font-Poppins text-tabcolor font-normal">Notepad.exe.dmp.zip</td>
-              <td class="px-5 py-5 text-sm text-tabcolor font-Poppins font-normal">
+              <td class="px-5 py-5 relative Snapshottip text-sm text-tabcolor font-Poppins font-normal">
                 Snapshot of notepad.exe.dmp.zip....
+                <div class="snapshottoltip rounded-md bg-[#737A80] text-center p-0.5 w-[192px] absolute left-5 top-12 ">
+                  <p class="text-[10px] font-Poppins font-normal text-white">Snapshot of notepad.exe.dmp.zip,
+                    analyzed on 28/05/2022, 8:45:00 AM</p>
+                 </div>
               </td>
               <td class="px-5 py-5 text-sm font-Poppins font-normal text-darkblu"> <a href="#" class="underline">Trickbot Case Study</a> </td>
               <td> 
@@ -786,8 +810,12 @@
                  29th Aug, 2022 at 12: 42
               </td>
               <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> Notepad.exe.dmp.zip </td>
-              <td class="px-5 py-5 text-sm text-tabcolor font-Poppins font-normal">
+              <td class="px-5 py-5 text-sm relative Snapshottip text-tabcolor font-Poppins font-normal">
                 Snapshot of notepad.exe.dmp.zip....
+                <div class="snapshottoltip rounded-md bg-[#737A80] text-center p-0.5 w-[192px] absolute left-5 top-12 ">
+                  <p class="text-[10px] font-Poppins font-normal text-white">Snapshot of notepad.exe.dmp.zip,
+                    analyzed on 28/05/2022, 8:45:00 AM</p>
+                 </div>
               </td>
               <td class="px-5 py-5 text-sm font-Poppins font-normal text-darkblu"> <a href="#" class="underline">Trickbot Case Study</a>  </td>
               <td> 
@@ -864,8 +892,12 @@
                   </button>  29th Aug, 2022 at 12: 42
               </td>
               <td class="px-5 py-5 text-sm font-Poppins font-normal text-tabcolor"> Notepad.exe.dmp.zip </td>
-              <td class="px-5 py-5 text-sm text-tabcolor font-Poppins font-normal">
+              <td class="px-5 py-5 text-sm Snapshottip relative text-tabcolor font-Poppins font-normal">
                 Snapshot of notepad.exe.dmp.zip....
+                <div class="snapshottoltip rounded-md bg-[#737A80] text-center p-0.5 w-[192px] absolute left-5 top-12 ">
+                  <p class="text-[10px] font-Poppins font-normal text-white">Snapshot of notepad.exe.dmp.zip,
+                    analyzed on 28/05/2022, 8:45:00 AM</p>
+                 </div>
               </td>
               <td class="px-5 py-5 text-sm font-Poppins font-normal text-darkblu"> <a href="#" class="underline">Trickbot Case Study</a> </td>
               <td> 
@@ -1023,9 +1055,9 @@
       </ul>
     </div>
   </div>
-  <button class="p-2 rightbut bg-[#114273] rounded-tl-3xl rounded-bl-3xl absolute right-0 top-8 z-20">
+  <button class="p-2 rightbut hover:w-14 bg-[#114273] rounded-tl-3xl rounded-bl-3xl absolute right-0 top-8 z-20">
     <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0.909833 0.000206632C0.732476 -0.00369422 0.55831 0.0477192 0.411549 0.147378C0.264788 0.247037 0.152724 0.390016 0.0909381 0.556308C0.029152 0.722601 0.0207137 0.903987 0.0667959 1.0753C0.112878 1.24661 0.211191 1.39923 0.348067 1.51209L5.57065 5.9862L0.348067 10.4587C0.253383 10.5283 0.174088 10.6167 0.115147 10.7183C0.0562053 10.82 0.0188884 10.9327 0.00553196 11.0495C-0.00782444 11.1662 0.00306784 11.2845 0.0375265 11.3968C0.0719853 11.5091 0.129268 11.6132 0.205787 11.7024C0.282307 11.7915 0.376416 11.8639 0.482219 11.915C0.588022 11.9661 0.703241 11.9948 0.82066 11.9994C0.938079 12.0039 1.05517 11.9842 1.1646 11.9414C1.27402 11.8986 1.37343 11.8336 1.4566 11.7506L7.43598 6.63464C7.52988 6.55451 7.60528 6.45505 7.65698 6.34296C7.70869 6.23086 7.73546 6.10886 7.73546 5.98541C7.73546 5.86197 7.70869 5.73996 7.65698 5.62787C7.60528 5.51578 7.52988 5.41622 7.43598 5.33609L1.4566 0.215205C1.30555 0.0810394 1.11181 0.00476303 0.909833 9.74702e-06V0.000206632Z" fill="white"/>
+      <path d="M6.82552 0.000206632C7.00288 -0.00369422 7.17704 0.0477192 7.3238 0.147378C7.47056 0.247037 7.58263 0.390016 7.64441 0.556308C7.7062 0.722601 7.71464 0.903987 7.66856 1.0753C7.62247 1.24661 7.52416 1.39923 7.38728 1.51209L2.1647 5.9862L7.38728 10.4587C7.48197 10.5283 7.56126 10.6167 7.62021 10.7183C7.67915 10.82 7.71646 10.9327 7.72982 11.0495C7.74318 11.1662 7.73228 11.2845 7.69783 11.3968C7.66337 11.5091 7.60608 11.6132 7.52956 11.7024C7.45304 11.7915 7.35894 11.8639 7.25313 11.915C7.14733 11.9661 7.03211 11.9948 6.91469 11.9994C6.79727 12.0039 6.68018 11.9842 6.57076 11.9414C6.46133 11.8986 6.36192 11.8336 6.27876 11.7506L0.299372 6.63464C0.205472 6.55451 0.130071 6.45505 0.0783682 6.34296C0.0266647 6.23086 -0.000109196 6.10886 -0.000109196 5.98541C-0.000109196 5.86197 0.0266647 5.73996 0.0783682 5.62787C0.130071 5.51578 0.205472 5.41622 0.299372 5.33609L6.27876 0.215205C6.4298 0.0810394 6.62354 0.00476303 6.82552 9.74702e-06V0.000206632Z" fill="white"/>
       </svg>
       
   </button>
@@ -1040,7 +1072,7 @@
 <p class="text-sm font-Poppins font-normal text-white ">©  2022 Magnet Forensics Inc. <a href="#" class="font-medium underline-offset-1 underline"> Terms & Services </a> </p>
   </footer>
 
-
+ 
 
   <!---Save hunt details model-->
  <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="SaveHuntDetails" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
@@ -1080,7 +1112,7 @@
             </div>
         </div>
 <div class="funlndevi lg:w-4/12 ">
-<img src="src/images/rafiki.png">
+<img src="src/images/rafiki3.png">
 </div>
 
 
@@ -1088,7 +1120,7 @@
       </div>
     
       <div class="text-center flex mt-6">
-        <button type="button" data-bs-dismiss="modal" aria-label="Close" class=" font-medium text-sm text-[#114273] font-Poppins text-center border border-solid border-[#114273] rounded w-[159px] items-center justify-center flex py-2 ">Cancel</button>
+        <button type="button" data-bs-dismiss="modal" aria-label="Close" class=" font-medium text-sm text-[#3CD2A5] font-Poppins text-center border border-solid border-[#00A682] rounded w-[159px] items-center justify-center flex py-2 ">Cancel</button>
           <div class="text-center flex ml-4">
             <button type="button" class=" font-medium text-sm text-white font-Poppins text-center border border-solid border-[#00A682] bg-[#3CD2A5] rounded w-[159px] items-center justify-center flex py-2 ">Save</button>
           </div>

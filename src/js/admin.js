@@ -313,6 +313,17 @@ $("#forgetpass").click(function(){
   $("#mainlogin").addClass("hidden");
   $("#sendlink").removeClass("hidden");
 });
+$("#addquery").click(function(){
+  $("#addquery-content").toggle();
+  
+});
+$("#Selectquery").click(function(){
+  $("#selectQuery").show();
+  $("#addquery-content").hide();
+});
+
+
+
 $(".sendlinknewass").click(function(){
   $("#mainlogin").addClass("hidden");
   $("#sendlink").addClass("hidden");
