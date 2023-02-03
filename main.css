@@ -42,8 +42,8 @@ aside.calc {  height: calc(100vh - 150px);}
 .tableview::-webkit-scrollbar-track,.viewjsn::-webkit-scrollbar-track{	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);	background-color: #F5F5F5;}
 .tableview::-webkit-scrollbar,.viewjsn::-webkit-scrollbar{ height: 6px;	width: 6px;	background-color: #F5F5F5;}
 .tableview::-webkit-scrollbar-thumb,.viewjsn::-webkit-scrollbar-thumb{border-radius: 5px;	background-color: #114273;}
-
-
+#accordionQueries .accordion-button::after {position: absolute;left: 0; transform: rotate(269deg);}
+#accordionQueries .accordion-button:not(.collapsed)::after {transform: rotate(2deg);}
 .round {
   display: block;
   position: relative;

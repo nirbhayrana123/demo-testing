@@ -17,306 +17,297 @@
 <body class="box-border ">
   <!-- component -->
   <div class="w-full h-full">
-    <!--header-->
-    <header class="px-4 py-2 header bg-[#F8FAFB] mr-0 fixed top-0 right-0 w-full z-50 ">
-      <div class="flex bg-bacgrediant rounded-lg  top-0 left-0 right-0 items-center justify-between md:px-6 px-4 py-3">
-        <div class=" relative lg:w-full lg:max-w-md flex items-center">
-          <div class="logo mr-6">
-            <img src="src/images/logo.png">
-          </div>
-      <div class="selceter relative">
-        <p class="absolute left-2.5 top-0 text-[10px] font-Poppins font-medium text-[#1E1E1E]">Organisation</p>
-        <select class="bg-inputbg p-3 text-[#114273] text-xs font-Poppins font-semibold  rounded-lg">
-          <option>
-            Compae Response Team
-          </option>
-          <option>
-            Compae Response Team
-          </option>
-          <option>
-            Compae Response Team
-          </option>
-          <option>
-            Compae Response Team
-          </option>
-        </select>
-      </div>
-        </div>
-     
+      <!--/////////////////////header///////////////////////-->
+      <header class="px-4 py-2 header mr-0 fixed bg-[#F8FAFB] top-0 right-0 w-full z-50 ">
+        <div class="flex bg-bacgrediant rounded-lg  top-0 left-0 right-0 items-center justify-between md:px-6 px-4 py-3">
+          <div class=" relative lg:w-full lg:max-w-md flex items-center">
+            <div class="logo mr-6">
+             <a href="home.html"> <img src="src/images/logo.png"></a>
+            </div>
+        <div class="selceter relative">
+         
+         
+          <div class="relative inline-block text-left">
+            <p class="absolute left-2.5 top-0 text-[10px] font-Poppins font-medium text-[#1E1E1E]">Organisation</p>
+      <button type="button" class="inline-flex w-full compae justify-center bg-inputbg hover:bg-white hover:shadow-md p-3 text-[#114273] text-xs font-Poppins font-semibold  rounded-lg" id="menu-button">
+        Compae Response Team 
+        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+        </svg>
+      </button>
+   
+  
+    <div class="absolute ResponseTeam right-0 z-10 mt-2 w-52 origin-top-right rounded-md hidden bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+      <div class="py-2 px-2" role="none">
+        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+        <a href="#"  class="upslide rounded-lg hover:bg-emerald-100 hover:text-green flex items-center font-Poppins font-medium none px-4 py-3 text-xs text-gray-700"> Compae Response Team</a>
+        <a href="#" class="upslide rounded-lg hover:bg-emerald-100 hover:text-green flex items-center font-Poppins font-medium none px-4 py-3 text-xs text-gray-700"> Freelance</a>
+        <a href="#" class="upslide rounded-lg hover:bg-emerald-100 hover:text-green flex items-center font-Poppins font-medium none px-4 py-3 text-xs text-gray-700">Comae Team</a>
+        <a href="#" class="upslide rounded-lg hover:bg-emerald-100 hover:text-green flex items-center font-Poppins font-medium none px-4 py-3 text-xs text-gray-700">Comae R&D</a>
+          <button type="submit" class="text-[#114273] cutstomehover rounded-lg hover:bg-[#114273] hover:text-white upslide w-full px-4 flex items-center py-3 text-left text-xs font-Poppins font-medium" > <svg width="16" class="mr-1" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.99984 3.1665V13.8332M13.3332 8.49984H2.6665" stroke="#114273" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Add Organisation</button>
        
-
-
-      <div class="block">
-        <div class="sm:ml-4 ml-0 flex items-center md:ml-6">
-          <form class="flex items-center">
-            <div class=" w-full mr-5">
-            <div class="relative md:block hidden">
-              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.6397 0C8.74949 0 11.279 2.52952 11.279 5.63931C11.279 7.10649 10.716 8.44464 9.79456 9.44893L11.6076 11.2582C11.7773 11.4278 11.7778 11.7023 11.6082 11.872C11.5236 11.9577 11.4119 12 11.3007 12C11.1901 12 11.0789 11.9577 10.9937 11.8732L9.15883 10.0434C8.19359 10.8164 6.96971 11.2792 5.6397 11.2792C2.52992 11.2792 -0.000183105 8.74909 -0.000183105 5.63931C-0.000183105 2.52952 2.52992 0 5.6397 0ZM5.6397 0.868655C3.00884 0.868655 0.868471 3.00844 0.868471 5.63931C0.868471 8.27017 3.00884 10.4105 5.6397 10.4105C8.26999 10.4105 10.4104 8.27017 10.4104 5.63931C10.4104 3.00844 8.26999 0.868655 5.6397 0.868655Z" fill="#1E1E1E"/>
-                  </svg>
-                  
-              </div>
-              <input type="text" id="simple-search"
-                class="bg-inputbg border border-inputbg text-gray-900 text-xs font-Poppins rounded-md focus:ring-blue-500 focus:border-inputbg block font-medium w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-inputbg dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Search" required="">
-              </div>
-
-              <div class="md:hidden block  ">
-                <div id="butone" class=" btn bg-[#F5F9FF] search-icon cursor-pointer p-3 rounded-full">
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.755 11.255H11.965L11.685 10.985C12.665 9.845 13.255 8.365 13.255 6.755C13.255 3.165 10.345 0.255001 6.755 0.255001C3.165 0.255001 0.255005 3.165 0.255005 6.755C0.255005 10.345 3.165 13.255 6.755 13.255C8.365 13.255 9.845 12.665 10.985 11.685L11.255 11.965V12.755L16.255 17.745L17.745 16.255L12.755 11.255ZM6.755 11.255C4.26501 11.255 2.255 9.245 2.255 6.755C2.255 4.265 4.26501 2.255 6.755 2.255C9.245 2.255 11.255 4.265 11.255 6.755C11.255 9.245 9.245 11.255 6.755 11.255Z" fill="#3376CD"/>
+      </div>
+    </div>
+  </div>
+        </div>
+          </div>
+       
+         
+  
+  
+        <div class="block">
+          <div class="sm:ml-4 ml-0 flex items-center md:ml-6">
+            <form class="flex items-center">
+              <div class=" w-full mr-5">
+              <div class="relative md:block hidden">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.6397 0C8.74949 0 11.279 2.52952 11.279 5.63931C11.279 7.10649 10.716 8.44464 9.79456 9.44893L11.6076 11.2582C11.7773 11.4278 11.7778 11.7023 11.6082 11.872C11.5236 11.9577 11.4119 12 11.3007 12C11.1901 12 11.0789 11.9577 10.9937 11.8732L9.15883 10.0434C8.19359 10.8164 6.96971 11.2792 5.6397 11.2792C2.52992 11.2792 -0.000183105 8.74909 -0.000183105 5.63931C-0.000183105 2.52952 2.52992 0 5.6397 0ZM5.6397 0.868655C3.00884 0.868655 0.868471 3.00844 0.868471 5.63931C0.868471 8.27017 3.00884 10.4105 5.6397 10.4105C8.26999 10.4105 10.4104 8.27017 10.4104 5.63931C10.4104 3.00844 8.26999 0.868655 5.6397 0.868655Z" fill="#1E1E1E"/>
                     </svg>
                     
                 </div>
-             </div>
+                <input type="text" id="simple-search"
+                  class="bg-inputbg border border-inputbg hover:bg-white hover:shadow-md text-gray-900 text-xs font-Poppins rounded-md focus:ring-blue-500 focus:border-inputbg block font-medium w-full pl-8 p-2.5  dark:bg-gray-700 dark:border-inputbg dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Search" required="">
+                </div>
   
-              <div class="sarchbar mt-4 hidden absolute input left-0 px-6 right-0 w-full">
-                <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search">
+                <div class="md:hidden block  ">
+                  <div id="butone" class=" btn bg-[#F5F9FF] search-icon cursor-pointer p-3 rounded-full">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.755 11.255H11.965L11.685 10.985C12.665 9.845 13.255 8.365 13.255 6.755C13.255 3.165 10.345 0.255001 6.755 0.255001C3.165 0.255001 0.255005 3.165 0.255005 6.755C0.255005 10.345 3.165 13.255 6.755 13.255C8.365 13.255 9.845 12.665 10.985 11.685L11.255 11.965V12.755L16.255 17.745L17.745 16.255L12.755 11.255ZM6.755 11.255C4.26501 11.255 2.255 9.245 2.255 6.755C2.255 4.265 4.26501 2.255 6.755 2.255C9.245 2.255 11.255 4.265 11.255 6.755C11.255 9.245 9.245 11.255 6.755 11.255Z" fill="#3376CD"/>
+                      </svg>
+                      
+                  </div>
+               </div>
+    
+                <div class="sarchbar mt-4 hidden absolute input left-0 px-6 right-0 w-full">
+                  <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search">
+                </div>
               </div>
-            </div>
-               
-          </form>
-          <button type="button"
-            class=" mr-5   bg-bgtransperent   rounded-lg text-sm p-1.5 items-center text-black">
-            <span class="sr-only">View notifications</span>
+                 
+            </form>
+            <button type="button" 
+              class=" mr-5 w-[40px] h-[40px] relative notifuntionhover  bg-bgtransperent hover:bg-whitergba   rounded-full text-sm p-1.5 items-center text-black">
+              <!-- Heroicon name: outline/bell -->
+              <svg width="20" class="m-auto" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.7" d="M8.33328 20C9.84253 20 11.105 18.9241 11.395 17.5H5.27161C5.56168 18.9241 6.82419 20 8.33328 20Z" fill="#D6F3FB"/>
+                <path opacity="0.6" d="M14.6466 12.0799C14.6249 12.0799 14.6049 12.0833 14.5833 12.0833C10.9074 12.0833 7.91672 9.09256 7.91672 5.41672C7.91672 3.97247 8.38333 2.6384 9.16672 1.54495V0.833282C9.16672 0.372467 8.79333 0 8.33328 0C7.87338 0 7.5 0.372467 7.5 0.833282V1.7334C4.67743 2.14005 2.5 4.56757 2.5 7.5V9.8233C2.5 11.4725 1.7775 13.0292 0.509949 14.1008C0.185852 14.3784 0 14.7816 0 15.2083C0 16.0126 0.654144 16.6667 1.45828 16.6667H15.2083C16.0126 16.6667 16.6667 16.0126 16.6667 15.2083C16.6667 14.7816 16.4809 14.3784 16.1484 14.0942C15.4916 13.5384 14.985 12.8467 14.6466 12.0799V12.0799Z" fill="#D6F3FB"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16675 5.41672C9.16675 2.42996 11.5967 0 14.5833 0C17.5701 0 20 2.42996 20 5.41672C20 8.40332 17.5701 10.8333 14.5833 10.8333C11.5967 10.8333 9.16675 8.40332 9.16675 5.41672Z" fill="#ECCA87"/>
+                <path d="M14.1643 8.35693H15.1929V3.14979H13.4714V4.07122H14.1643V8.35693Z" fill="#114273"/>
+                </svg>
+                
+                  <span class="notifuntiontolltip m-auto text-[9px] absolute top-16 rounded-md -left-6 right-0 w-[100px] bg-gray-500 p-1 text-white">
+                    Notifications
+                  </span>
+            </button>
+            <button type="button"
+            class=" block  w-[40px] h-[40px] relative notifuntionhover bg-bgtransperent  hover:bg-whitergba rounded-full text-sm p-1.5 items-center text-black">
             <!-- Heroicon name: outline/bell -->
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.7" d="M8.33328 20C9.84253 20 11.105 18.9241 11.395 17.5H5.27161C5.56168 18.9241 6.82419 20 8.33328 20Z" fill="#D6F3FB"/>
-              <path opacity="0.6" d="M14.6466 12.0799C14.6249 12.0799 14.6049 12.0833 14.5833 12.0833C10.9074 12.0833 7.91672 9.09256 7.91672 5.41672C7.91672 3.97247 8.38333 2.6384 9.16672 1.54495V0.833282C9.16672 0.372467 8.79333 0 8.33328 0C7.87338 0 7.5 0.372467 7.5 0.833282V1.7334C4.67743 2.14005 2.5 4.56757 2.5 7.5V9.8233C2.5 11.4725 1.7775 13.0292 0.509949 14.1008C0.185852 14.3784 0 14.7816 0 15.2083C0 16.0126 0.654144 16.6667 1.45828 16.6667H15.2083C16.0126 16.6667 16.6667 16.0126 16.6667 15.2083C16.6667 14.7816 16.4809 14.3784 16.1484 14.0942C15.4916 13.5384 14.985 12.8467 14.6466 12.0799V12.0799Z" fill="#D6F3FB"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16675 5.41672C9.16675 2.42996 11.5967 0 14.5833 0C17.5701 0 20 2.42996 20 5.41672C20 8.40332 17.5701 10.8333 14.5833 10.8333C11.5967 10.8333 9.16675 8.40332 9.16675 5.41672Z" fill="#ECCA87"/>
-              <path d="M14.1643 8.35693H15.1929V3.14979H13.4714V4.07122H14.1643V8.35693Z" fill="#114273"/>
+            <svg width="18"  height="20" class="hover:fill-white m-auto" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.6" d="M9.65736 0.833496C10.3506 0.833496 10.9782 1.2185 11.3248 1.78683C11.4935 2.06183 11.6059 2.401 11.5778 2.7585C11.559 3.0335 11.6434 3.3085 11.7932 3.56516C12.271 4.34433 13.3296 4.63766 14.154 4.19766C15.0814 3.666 16.2524 3.98683 16.7864 4.89433L17.414 5.976C17.9574 6.8835 17.6576 8.04766 16.7208 8.57016C15.9245 9.03766 15.6435 10.0735 16.1212 10.8618C16.2711 11.1093 16.4397 11.3202 16.702 11.4485C17.0299 11.6227 17.2829 11.8977 17.4609 12.1727C17.8075 12.741 17.7794 13.4377 17.4421 14.0518L16.7864 15.1518C16.4397 15.7385 15.7934 16.1052 15.1282 16.1052C14.8004 16.1052 14.435 16.0135 14.1352 15.8302C13.8917 15.6743 13.6106 15.6193 13.3109 15.6193C12.3834 15.6193 11.6059 16.3802 11.5778 17.2877C11.5778 18.3418 10.7159 19.1668 9.63862 19.1668H8.36458C7.2779 19.1668 6.41605 18.3418 6.41605 17.2877C6.39731 16.3802 5.61977 15.6193 4.69235 15.6193C4.3832 15.6193 4.10217 15.6743 3.86797 15.8302C3.56819 16.0135 3.19347 16.1052 2.87496 16.1052C2.20047 16.1052 1.55409 15.7385 1.20747 15.1518L0.561083 14.0518C0.214469 13.456 0.195733 12.741 0.542347 12.1727C0.692234 11.8977 0.973273 11.6227 1.29178 11.4485C1.55409 11.3202 1.72271 11.1093 1.88196 10.8618C2.35036 10.0735 2.06932 9.03766 1.27305 8.57016C0.34562 8.04766 0.0458462 6.8835 0.579819 5.976L1.20747 4.89433C1.75081 3.98683 2.91244 3.666 3.84923 4.19766C4.66424 4.63766 5.72282 4.34433 6.20058 3.56516C6.35047 3.3085 6.43478 3.0335 6.41605 2.7585C6.39731 2.401 6.50036 2.06183 6.67835 1.78683C7.02496 1.2185 7.65262 0.851829 8.33648 0.833496H9.65736ZM9.01097 7.41516C7.5402 7.41516 6.35047 8.57016 6.35047 10.0093C6.35047 11.4485 7.5402 12.5943 9.01097 12.5943C10.4817 12.5943 11.6434 11.4485 11.6434 10.0093C11.6434 8.57016 10.4817 7.41516 9.01097 7.41516Z" fill="#D6F3FB"/>
               </svg>
               
-
+              <span class="notifuntiontolltip m-auto text-[9px] absolute top-16 rounded-md -left-6 right-0 w-[100px] bg-gray-500 p-1 text-white">
+                Settings
+              </span>
           </button>
-          <button type="button"
-          class=" block     bg-bgtransperent   rounded-lg text-sm p-1.5 items-center text-black">
-          <!-- Heroicon name: outline/bell -->
-          <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path opacity="0.6" d="M9.65736 0.833496C10.3506 0.833496 10.9782 1.2185 11.3248 1.78683C11.4935 2.06183 11.6059 2.401 11.5778 2.7585C11.559 3.0335 11.6434 3.3085 11.7932 3.56516C12.271 4.34433 13.3296 4.63766 14.154 4.19766C15.0814 3.666 16.2524 3.98683 16.7864 4.89433L17.414 5.976C17.9574 6.8835 17.6576 8.04766 16.7208 8.57016C15.9245 9.03766 15.6435 10.0735 16.1212 10.8618C16.2711 11.1093 16.4397 11.3202 16.702 11.4485C17.0299 11.6227 17.2829 11.8977 17.4609 12.1727C17.8075 12.741 17.7794 13.4377 17.4421 14.0518L16.7864 15.1518C16.4397 15.7385 15.7934 16.1052 15.1282 16.1052C14.8004 16.1052 14.435 16.0135 14.1352 15.8302C13.8917 15.6743 13.6106 15.6193 13.3109 15.6193C12.3834 15.6193 11.6059 16.3802 11.5778 17.2877C11.5778 18.3418 10.7159 19.1668 9.63862 19.1668H8.36458C7.2779 19.1668 6.41605 18.3418 6.41605 17.2877C6.39731 16.3802 5.61977 15.6193 4.69235 15.6193C4.3832 15.6193 4.10217 15.6743 3.86797 15.8302C3.56819 16.0135 3.19347 16.1052 2.87496 16.1052C2.20047 16.1052 1.55409 15.7385 1.20747 15.1518L0.561083 14.0518C0.214469 13.456 0.195733 12.741 0.542347 12.1727C0.692234 11.8977 0.973273 11.6227 1.29178 11.4485C1.55409 11.3202 1.72271 11.1093 1.88196 10.8618C2.35036 10.0735 2.06932 9.03766 1.27305 8.57016C0.34562 8.04766 0.0458462 6.8835 0.579819 5.976L1.20747 4.89433C1.75081 3.98683 2.91244 3.666 3.84923 4.19766C4.66424 4.63766 5.72282 4.34433 6.20058 3.56516C6.35047 3.3085 6.43478 3.0335 6.41605 2.7585C6.39731 2.401 6.50036 2.06183 6.67835 1.78683C7.02496 1.2185 7.65262 0.851829 8.33648 0.833496H9.65736ZM9.01097 7.41516C7.5402 7.41516 6.35047 8.57016 6.35047 10.0093C6.35047 11.4485 7.5402 12.5943 9.01097 12.5943C10.4817 12.5943 11.6434 11.4485 11.6434 10.0093C11.6434 8.57016 10.4817 7.41516 9.01097 7.41516Z" fill="#D6F3FB"/>
-            </svg>
-            
-
-        </button>
-          <!-- Profile dropdown -->
-          <div class=" ml-3">
-            <div>
-              <div class="block ">
-              <a href="#"
-                class="flex max-w-xs slide bg-bgtransperent dropdown-toggle  rounded-lg font-medium   text-sm p-1.5 items-center font-Poppins text-white">
-                 <div class=" rounded-full p-2 bg-white mr-2 w-9 h-9 text-center">
-                  <svg width="15" class="m-auto" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.51359 12.2032C11.2268 12.2032 14.3604 12.8066 14.3604 15.1345C14.3604 17.4634 11.2063 18.0453 7.51359 18.0453C3.80121 18.0453 0.666748 17.442 0.666748 15.114C0.666748 12.7852 3.8209 12.2032 7.51359 12.2032ZM7.51359 0.928223C10.029 0.928223 12.0445 2.94293 12.0445 5.4566C12.0445 7.97027 10.029 9.98584 7.51359 9.98584C4.999 9.98584 2.98271 7.97027 2.98271 5.4566C2.98271 2.94293 4.999 0.928223 7.51359 0.928223Z" fill="#114273"/>
+            <!-- Profile dropdown -->
+            <div class=" ml-3">
+              <div>
+                <div class="block ">
+                <a href="#"
+                  class="flex max-w-xs slide bg-bgtransperent dropdown-toggle  rounded-lg font-medium   text-sm p-1.5 items-center font-Poppins text-white">
+                   <div class=" rounded-full p-2 bg-white mr-2 w-9 h-9 text-center">
+                    <svg width="15" class="m-auto" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.51359 12.2032C11.2268 12.2032 14.3604 12.8066 14.3604 15.1345C14.3604 17.4634 11.2063 18.0453 7.51359 18.0453C3.80121 18.0453 0.666748 17.442 0.666748 15.114C0.666748 12.7852 3.8209 12.2032 7.51359 12.2032ZM7.51359 0.928223C10.029 0.928223 12.0445 2.94293 12.0445 5.4566C12.0445 7.97027 10.029 9.98584 7.51359 9.98584C4.999 9.98584 2.98271 7.97027 2.98271 5.4566C2.98271 2.94293 4.999 0.928223 7.51359 0.928223Z" fill="#114273"/>
+                      </svg>
+                      
+                </div>
+                  <p>Radovan Stevanovic 
+                    <span class="block text-[#fafbfca8] font-medium text-xs font-Poppins">Admin</span> </p>
+                </a>
+              </div>
+             
+             
+              </div>
+  
+  
+              <div
+                class="absolute hidden right-0 z-10 mt-2 w-48 origin-top-right  rounded-md bg-white py-1.5 px-1.5 shadow-lg ring-1 dropdown ring-black ring-opacity-5 focus:outline-none">
+                <!-- Active: "bg-gray-100", Not Active: "" -->
+                <a href="#" class=" none flex items-center font-Poppins rounded-lg font-medium px-4 py-2 text-xs text-gray-700 hover:bg-emerald-100 hover:text-green " role="menuitem" tabindex="-1"
+                  id="user-menu-item-0"><svg width="10" height="11" class="mr-1.5" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13366 0.500488C5.49166 0.500488 5.83966 0.647488 6.08916 0.902988C6.33816 1.15999 6.47566 1.51249 6.46516 1.86999C6.46616 1.95049 6.49266 2.04349 6.54066 2.12499C6.62016 2.25999 6.74566 2.35499 6.89466 2.39399C7.04366 2.43099 7.19966 2.41099 7.33216 2.33249C7.97216 1.96699 8.78666 2.18599 9.15216 2.82099L9.46366 3.36049C9.47166 3.37499 9.47866 3.38899 9.48466 3.40349C9.81566 4.02899 9.59466 4.81649 8.97966 5.17599C8.89016 5.22749 8.81766 5.29949 8.76766 5.38649C8.69016 5.52099 8.66866 5.68099 8.70766 5.82799C8.74766 5.97799 8.84316 6.10249 8.97766 6.17949C9.28116 6.35399 9.50766 6.64799 9.59816 6.98749C9.68866 7.32649 9.63916 7.69449 9.46266 7.99799L9.13066 8.55099C8.76516 9.17899 7.95066 9.39649 7.31716 9.03049C7.23266 8.98199 7.13516 8.95549 7.03816 8.95299H7.03516C6.89066 8.95299 6.74216 9.01449 6.63416 9.12199C6.52466 9.23149 6.46466 9.37749 6.46566 9.53249C6.46216 10.267 5.86466 10.861 5.13366 10.861H4.50716C3.77266 10.861 3.17516 10.264 3.17516 9.52949C3.17416 9.43899 3.14816 9.34499 3.09966 9.26349C3.02116 9.12649 2.89416 9.02849 2.74766 8.98949C2.60216 8.95049 2.44266 8.97199 2.31166 9.04799C1.99766 9.22299 1.62816 9.26549 1.29016 9.17049C0.95266 9.07499 0.66116 8.84299 0.49016 8.53549L0.17766 7.99699C-0.18784 7.36299 0.0296599 6.55049 0.66266 6.18449C0.84216 6.08099 0.95366 5.88799 0.95366 5.68099C0.95366 5.47399 0.84216 5.28049 0.66266 5.17699C0.0291599 4.80899 -0.18784 3.99449 0.17716 3.36049L0.51616 2.80399C0.87666 2.17699 1.69166 1.95599 2.32716 2.32099C2.41366 2.37249 2.50766 2.39849 2.60316 2.39949C2.91466 2.39949 3.17516 2.14249 3.18016 1.82649C3.17816 1.47799 3.31566 1.14349 3.56616 0.890988C3.81766 0.638988 4.15166 0.500488 4.50716 0.500488H5.13366ZM5.13366 1.25049H4.50716C4.35216 1.25049 4.20716 1.31099 4.09766 1.41999C3.98866 1.52949 3.92916 1.67499 3.93016 1.82999C3.91966 2.56099 3.32216 3.14949 2.59866 3.14949C2.36666 3.14699 2.14316 3.08449 1.94916 2.96849C1.67666 2.81349 1.32066 2.90899 1.16116 3.18649L0.82266 3.74299C0.66766 4.01199 0.76266 4.36749 1.03866 4.52799C1.44816 4.76499 1.70366 5.20699 1.70366 5.68099C1.70366 6.15499 1.44816 6.59649 1.03766 6.83399C0.76316 6.99299 0.66816 7.34649 0.82716 7.62149L1.14266 8.16549C1.22066 8.30599 1.34816 8.40749 1.49566 8.44899C1.64266 8.48999 1.80466 8.47249 1.93966 8.39749C2.13816 8.28099 2.36916 8.22049 2.60116 8.22049C2.71566 8.22049 2.83016 8.23499 2.94216 8.26499C3.28016 8.35599 3.57366 8.58199 3.74766 8.88549C3.86066 9.07599 3.92316 9.29849 3.92516 9.52549C3.92516 9.85049 4.18616 10.111 4.50716 10.111H5.13366C5.45316 10.111 5.71416 9.85199 5.71566 9.53249C5.71366 9.17949 5.85166 8.84399 6.10416 8.59149C6.35316 8.34249 6.70116 8.19299 7.04916 8.20299C7.27716 8.20849 7.49666 8.26999 7.69016 8.37999C7.96866 8.53949 8.32416 8.44449 8.48516 8.16949L8.81716 7.61599C8.89116 7.48849 8.91266 7.32849 8.87316 7.18099C8.83416 7.03349 8.73616 6.90549 8.60416 6.82999C8.29516 6.65199 8.07466 6.36499 7.98316 6.02099C7.89266 5.68349 7.94216 5.31499 8.11866 5.01149C8.23366 4.81149 8.40216 4.64299 8.60416 4.52699C8.87516 4.36849 8.97016 4.01399 8.81266 3.73799C8.80616 3.72699 8.80016 3.71549 8.79516 3.70349L8.50216 3.19549C8.34266 2.91799 7.98766 2.82249 7.70916 2.98099C7.40816 3.15899 7.05016 3.20999 6.70616 3.11949C6.36266 3.03049 6.07466 2.81299 5.89516 2.50599C5.78016 2.31399 5.71766 2.09049 5.71566 1.86299C5.72016 1.69199 5.66016 1.53849 5.55116 1.42599C5.44266 1.31399 5.29016 1.25049 5.13366 1.25049ZM4.82261 3.98754C5.75611 3.98754 6.51561 4.74754 6.51561 5.68104C6.51561 6.61454 5.75611 7.37354 4.82261 7.37354C3.88911 7.37354 3.12961 6.61454 3.12961 5.68104C3.12961 4.74754 3.88911 3.98754 4.82261 3.98754ZM4.82261 4.73754C4.30261 4.73754 3.87961 5.16104 3.87961 5.68104C3.87961 6.20104 4.30261 6.62354 4.82261 6.62354C5.34261 6.62354 5.76561 6.20104 5.76561 5.68104C5.76561 5.16104 5.34261 4.73754 4.82261 4.73754Z" fill="#737A80"/>
+                    </svg>
+                     Account Settings</a>
+  
+                <a href="#" data-bs-toggle="modal" data-bs-target="#Pendinginvitations" class="rounded-lg flex hover:bg-emerald-100 hover:text-green items-center font-Poppins font-medium none px-4 py-2 text-xs text-gray-700" role="menuitem" tabindex="-1"
+                  id="user-menu-item-1"><svg width="12" height="11" class="mr-1.5" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.3295 0.5C9.9945 0.5 11.25 1.8585 11.25 3.66V7.094C11.25 8.016 10.924 8.849 10.3315 9.44C9.8 9.9695 9.1105 10.25 8.3375 10.25H3.411C2.6395 10.25 1.9505 9.97 1.4185 9.44C0.826 8.849 0.5 8.016 0.5 7.094V3.66C0.5 1.8585 1.7555 0.5 3.4205 0.5H8.3295ZM8.3295 1.25H3.4205C2.163 1.25 1.25 2.2635 1.25 3.66V7.094C1.25 7.8155 1.498 8.46 1.948 8.9085C2.336 9.296 2.8425 9.5 3.4125 9.5H8.3295C8.3305 9.499 8.3345 9.5 8.3375 9.5C8.908 9.5 9.414 9.296 9.802 8.9085C10.2525 8.46 10.5 7.8155 10.5 7.094V3.66C10.5 2.2635 9.587 1.25 8.3295 1.25ZM9.1175 3.5644C9.248 3.7249 9.2235 3.9609 9.063 4.0919L6.841 5.8979C6.56 6.1209 6.224 6.2324 5.8885 6.2324C5.554 6.2324 5.2205 6.1219 4.9415 5.9009L2.699 4.0929C2.5375 3.9629 2.5125 3.7264 2.642 3.5654C2.7725 3.4049 3.0085 3.3794 3.1695 3.5089L5.41 5.3149C5.6915 5.5379 6.088 5.5379 6.3715 5.3129L8.5895 3.5099C8.7505 3.3784 8.9865 3.4034 9.1175 3.5644Z" fill="#737A80"/>
+                    </svg>
+                    Invitations</a>
+  
+                <a href="#" data-bs-target="#Organisationuser" data-bs-toggle="modal" class="rounded-lg hover:bg-emerald-100 hover:text-green flex items-center font-Poppins font-medium none px-4 py-2 text-xs text-gray-700" role="menuitem" tabindex="-1"
+                  id="user-menu-item-2"><svg width="12" height="13" class="mr-1.5" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9433 7.707L5.99976 7.70702L6.12605 7.70744C7.09134 7.7138 9.2973 7.81132 9.2973 9.3065C9.2973 10.7919 7.16824 10.8887 6.1411 10.8951L5.76054 10.8951C4.79519 10.8887 2.5888 10.7913 2.5888 9.298C2.5888 7.81076 4.79519 7.71377 5.76054 7.70744L5.88684 7.70702C5.90643 7.707 5.92527 7.707 5.9433 7.707ZM5.9433 8.457C4.7553 8.457 3.3388 8.603 3.3388 9.298C3.3388 9.97727 4.67075 10.1361 5.83472 10.1451L5.9433 10.1455C7.1313 10.1455 8.5473 10 8.5473 9.3065C8.5473 8.6045 7.1313 8.457 5.9433 8.457ZM9.9201 7.5041C11.1316 7.6856 11.3861 8.2546 11.3861 8.7001C11.3861 8.9721 11.2791 9.4686 10.5641 9.7411C10.5201 9.7576 10.4751 9.7656 10.4306 9.7656C10.2796 9.7656 10.1371 9.6736 10.0801 9.5241C10.0061 9.3306 10.1036 9.1136 10.2971 9.0401C10.6361 8.9111 10.6361 8.7686 10.6361 8.7001C10.6361 8.4811 10.3576 8.3281 9.8086 8.2461C9.6041 8.2151 9.4626 8.0246 9.4931 7.8191C9.5236 7.6141 9.7136 7.4776 9.9201 7.5041ZM2.393 7.8191C2.4235 8.0246 2.282 8.2151 2.0775 8.2461C1.5285 8.3281 1.25 8.4811 1.25 8.7001C1.25 8.7686 1.25 8.9106 1.5895 9.0401C1.783 9.1136 1.8805 9.3306 1.8065 9.5241C1.7495 9.6736 1.607 9.7656 1.456 9.7656C1.4115 9.7656 1.3665 9.7576 1.3225 9.7411C0.607 9.4681 0.5 8.9716 0.5 8.7001C0.5 8.2551 0.7545 7.6856 1.9665 7.5041C2.173 7.4781 2.362 7.6141 2.393 7.8191ZM5.9433 2.5C7.2033 2.5 8.2278 3.525 8.2278 4.7845C8.2278 6.044 7.2033 7.069 5.9433 7.069H5.9298C5.3198 7.067 4.7483 6.828 4.3203 6.396C3.8913 5.9645 3.6568 5.3915 3.65928 4.783C3.65928 3.525 4.6838 2.5 5.9433 2.5ZM5.9433 3.25C5.0973 3.25 4.40929 3.9385 4.40929 4.7845C4.4078 5.1945 4.5648 5.578 4.8523 5.8675C5.1398 6.157 5.5228 6.3175 5.9308 6.319L5.9433 6.694V6.319C6.7893 6.319 7.4778 5.631 7.4778 4.7845C7.4778 3.9385 6.7893 3.25 5.9433 3.25ZM9.0378 2.98975C9.9168 3.13425 10.5553 3.88625 10.5553 4.77775C10.5533 5.67525 9.8828 6.44525 8.9953 6.56975C8.9778 6.57225 8.9603 6.57325 8.9433 6.57325C8.7593 6.57325 8.5988 6.43775 8.5723 6.25025C8.5438 6.04475 8.6863 5.85525 8.8918 5.82675C9.4118 5.75375 9.8043 5.30275 9.8053 4.77675C9.8053 4.25525 9.4313 3.81425 8.9158 3.72975C8.7118 3.69625 8.5733 3.50325 8.6068 3.29875C8.6408 3.09425 8.8323 2.95725 9.0378 2.98975ZM3.2798 3.29875C3.3133 3.50325 3.1748 3.69625 2.9708 3.72975C2.4553 3.81425 2.0813 4.25525 2.0813 4.77775C2.0823 5.30275 2.4748 5.75425 2.9943 5.82675C3.1998 5.85525 3.3423 6.04475 3.3138 6.25025C3.2873 6.43775 3.1268 6.57325 2.9428 6.57325C2.9258 6.57325 2.9083 6.57225 2.8908 6.56975C2.0033 6.44525 1.3333 5.67525 1.3313 4.77875C1.3313 3.88625 1.9698 3.13425 2.8488 2.98975C3.0593 2.95675 3.2458 3.09525 3.2798 3.29875Z" fill="#737A80"/>
+                    </svg>
+                     Manage Users</a>
+                  <a href="login.html" class="flex cutstomehover hover:bg-[#114273] rounded-lg hover:text-[#fff] items-center font-Poppins font-medium none px-4 py-2 text-xs text-[#114273]" role="menuitem" tabindex="-1"
+                  id="user-menu-item-2">
+                  <svg width="15" height="15" class="mr-1.5" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53883 0.833496C8.1695 0.833496 9.49616 2.16016 9.49616 3.79083V4.41216C9.49616 4.68816 9.27216 4.91216 8.99616 4.91216C8.72016 4.91216 8.49616 4.68816 8.49616 4.41216V3.79083C8.49616 2.71083 7.61816 1.8335 6.53883 1.8335H3.28883C2.21083 1.8335 1.3335 2.71083 1.3335 3.79083V11.2102C1.3335 12.2895 2.21083 13.1668 3.28883 13.1668H6.54616C7.62083 13.1668 8.49616 12.2922 8.49616 11.2175V10.5888C8.49616 10.3128 8.72016 10.0888 8.99616 10.0888C9.27216 10.0888 9.49616 10.3128 9.49616 10.5888V11.2175C9.49616 12.8442 8.17216 14.1668 6.54616 14.1668H3.28883C1.6595 14.1668 0.333496 12.8408 0.333496 11.2102V3.79083C0.333496 2.16016 1.6595 0.833496 3.28883 0.833496H6.53883ZM11.9256 5.20283L13.8776 7.14616C13.895 7.16344 13.9106 7.18141 13.9248 7.20043L13.8776 7.14616C13.9012 7.16945 13.9222 7.1949 13.9404 7.22203C13.9484 7.23433 13.9562 7.24704 13.9633 7.26011C13.9692 7.27032 13.9745 7.28097 13.9795 7.29181C13.9837 7.30138 13.9877 7.31095 13.9915 7.32068C13.9965 7.33335 14.0009 7.34637 14.0048 7.35957C14.0077 7.36996 14.0103 7.38033 14.0127 7.39083C14.0157 7.40356 14.018 7.41637 14.0199 7.42928C14.0209 7.43768 14.0219 7.44647 14.0227 7.45534C14.0242 7.47054 14.0249 7.48532 14.0249 7.50016L14.0215 7.5415L14.0201 7.56798C14.02 7.56911 14.0198 7.57024 14.0197 7.57137L14.0249 7.50016C14.0249 7.53717 14.0208 7.57381 14.0128 7.60944C14.0103 7.61999 14.0077 7.63036 14.0047 7.6406C14.0009 7.65395 13.9965 7.66698 13.9916 7.6798C13.9877 7.68937 13.9837 7.69895 13.9794 7.70837C13.9745 7.71935 13.9692 7.73001 13.9634 7.74047C13.9562 7.75329 13.9484 7.766 13.9402 7.77832C13.9355 7.78563 13.9304 7.79285 13.925 7.79993C13.9091 7.82082 13.8918 7.84046 13.8731 7.85865L11.9256 9.79816C11.8282 9.8955 11.7002 9.94416 11.5729 9.94416C11.4449 9.94416 11.3162 9.8955 11.2189 9.79683C11.0242 9.60083 11.0249 9.28483 11.2202 9.09016L12.3135 8.00016H5.49736C5.22136 8.00016 4.99736 7.77616 4.99736 7.50016C4.99736 7.22416 5.22136 7.00016 5.49736 7.00016H12.3148L11.2202 5.91083C11.0249 5.71616 11.0236 5.40016 11.2189 5.20416C11.4136 5.00816 11.7296 5.00816 11.9256 5.20283Z" fill="#114273"/>
                     </svg>
                     
+                  Logout</a>
               </div>
-                <p>Radovan Stevanovic 
-                  <span class="block text-[#fafbfca8] font-medium text-xs font-Poppins">Admin</span> </p>
-              </a>
-            </div>
-           
-           
-            </div>
-
-
-            <div
-              class="absolute hidden right-0 z-10 mt-2 w-48 origin-top-right  rounded-md bg-white py-1 shadow-lg ring-1 dropdown ring-black ring-opacity-5 focus:outline-none">
-              <!-- Active: "bg-gray-100", Not Active: "" -->
-              <a href="#" class="block none px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                id="user-menu-item-0">Your Profile</a>
-
-              <a href="#" class="block none px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                id="user-menu-item-1">Settings</a>
-
-              <a href="#" class="block none px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                id="user-menu-item-2">Sign out</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-       </header>
+         </header>
+         <!-------///////////////////Header End///////////////////////------->
   </div>
- 
-  <!--header end--> 
+  
    
   <main class="  xl:mt-14 mt-20  md:px-10 px-4 relative pt-10 pb-6 min-h-screen ">
  
 <div class="mainoverview"> 
 
-  
-<aside class="w-44 lg:block hidden calc fixed ease-in-out" aria-label="Sidebar">
-  <div class=" pt-11 pb-4 overflow-y-auto scroole h-full rounded-lg bg-white dark:bg-gray-800">
-     <ul class="space-y-2 menus">
+  <!---////////////////////Left Sidebar/////////////////////////-->
+  <aside class="w-44 lg:block calc bg-white rounded-md fixed  ease-in-out z-50" aria-label="Sidebar" id="mobile-nav">
+    <div class=" pt-11 pb-4 overflow-y-auto scroole h-full rounded-lg bg-white dark:bg-gray-800">
+      <ul class="space-y-2 menus">
+     
         <li>
-           <a href="overview.html" class="pl-3 flex bg-[#EDF0F2] active relative justify-between items-center p-2 text-xs font-normal font-Poppins text-[#263252]    hover:bg-[#EDF0F2]">
-              <span class="font-medium text-xs tect-[#263252]">Overview</span>
-              <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#114273] items-center justify-center w-2 h-2 rounded-full text-white">05</span>
-           </a>
+          <a href="overview.html"
+            class="pl-3 flex active bg-[#EDF0F2] relative justify-between items-center p-2 text-xs font-Poppins font-normal text-[#263252]    hover:bg-[#EDF0F2]">
+            <span class="font-medium text-xs tect-[#263252]">Overview</span>
+            <span
+              class="flex p-3 text-[9px] font-Poppins font-normal bg-[#114273] items-center justify-center w-2 h-2 rounded-full text-white">56</span>
+          </a>
+        </li>
+        <li>
+        <li>
+          <a href="Process.html"
+            class="pl-3 flex   relative justify-between items-center p-2 text-xs font-normal font-Poppins text-[#263252]    hover:bg-[#EDF0F2]">
+            <span class="font-medium text-xs tect-[#263252]">Processes</span>
+            <span
+              class="flex p-3 text-[9px] font-Poppins font-normal  bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">05</span>
+          </a>
+        </li>
+        <li>
+          <a href="Drivers.html"
+            class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]     hover:bg-[#EDF0F2]">
+            <span class="font-medium text-xs tect-[#263252]">Drivers</span>
+            <span
+              class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">24</span>
+          </a>
         </li>
 
         <li>
-          <a href="Process.html" class="pl-3 flex  justify-between items-center p-2 text-xs font-Poppins font-normal text-[#263252]    hover:bg-[#EDF0F2]">
-             <span class="font-medium text-xs tect-[#263252]">Processes</span>
-             <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">56</span>
+          <a href="Syscalls.html"
+            class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]     hover:bg-[#EDF0F2]">
+            <span class="font-medium text-xs tect-[#263252]">Syscalls</span>
+            <span
+              class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">24</span>
           </a>
-       </li>
-
-       <li>
-        <a href="Drivers.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]    hover:bg-[#EDF0F2]">
-           <span class="font-medium text-xs tect-[#263252]">Drivers</span>
-           <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">48</span>
-        </a>
-     </li>
-     <li>
-      <a href="Syscalls.html" class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]     hover:bg-[#EDF0F2]">
-         <span class="font-medium text-xs tect-[#263252]">Syscalls</span>
-         <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">24</span>
-      </a>
-   </li>
-   <li>
-    <a href="Objects.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-       <span class="font-medium text-xs tect-[#263252]">Objects</span>
-       <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">89</span>
-    </a>
- </li>
- <li>
-  <a href="Registry.html" class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]   hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]">Registry</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">56</span>
-  </a>
-</li>
-<li>
-  <a href="Sockets.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]">Sockets</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">48</span>
-  </a>
-</li>
-<li>
-  <a href="Callbacks.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]">Callbacks</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">25</span>
-  </a>
-</li>
-<li>
-  <a href="Scheduled.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]   hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]">Scheduled Ta...</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">89</span>
-  </a>
-</li>
-<li>
-  <a href="Autoruns.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252] hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]">Autoruns</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">26</span>
-  </a>
-</li>
-<li>
-  <a href="Console.html" class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]" >Console</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">48</span>
-  </a>
-</li>
-     </ul>
-  </div>
-
-</aside>
-
-
-<aside class="w-44 lg:hidden block  fixed shadow-sm  calc    flex-col justify-between  transition duration-150 ease-in-out" id="mobile-nav" aria-label="Sidebar">
-  <div class=" pt-11 pb-4 overflow-y-auto scroole h-full rounded-lg bg-white dark:bg-gray-800">
-     <ul class="space-y-2 menus">
+        </li>
         <li>
-           <a href="overview.html" class="pl-3 flex bg-[#EDF0F2] active relative justify-between items-center p-2 text-xs font-normal font-Poppins text-[#263252]    hover:bg-[#EDF0F2]">
-              <span class="font-medium text-xs tect-[#263252]">Overview</span>
-              <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#114273] items-center justify-center w-2 h-2 rounded-full text-white">05</span>
-           </a>
+          <a href="Objects.html"
+            class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
+            <span class="font-medium text-xs tect-[#263252]">Objects</span>
+            <span
+              class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">89</span>
+          </a>
+        </li>
+        <li>
+          <a href="Registry.html"
+            class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252] hover:bg-[#EDF0F2]">
+            <span class="font-medium text-xs tect-[#263252]">Registry</span>
+            <span
+              class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">26</span>
+          </a>
+        </li>
+        <li>
+          <a href="Sockets.html"
+            class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
+            <span class="font-medium text-xs tect-[#263252]">Sockets</span>
+            <span
+              class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">48</span>
+          </a>
+        </li>
+        <li>
+          <a href="Callbacks.html"
+            class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
+            <span class="font-medium text-xs tect-[#263252]">Callbacks</span>
+            <span
+              class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">25</span>
+          </a>
+        </li>
+        <li>
+          <a href="Scheduled.html"
+            class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]   hover:bg-[#EDF0F2]">
+            <span class="font-medium text-xs tect-[#263252]">Scheduled Ta...</span>
+            <span
+              class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">89</span>
+          </a>
         </li>
 
-        <li>
-          <a href="Process.html" class="pl-3 flex  justify-between items-center p-2 text-xs font-Poppins font-normal text-[#263252]    hover:bg-[#EDF0F2]">
-             <span class="font-medium text-xs tect-[#263252]">Processes</span>
-             <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">56</span>
+       
+          <a href="Autoruns.html"
+            class="pl-3 flex   relative justify-between items-center p-2 text-xs font-normal font-Poppins text-[#263252]    hover:bg-[#EDF0F2]">
+            <span class="font-medium text-xs tect-[#263252]">Autoruns</span>
+            <span
+              class="flex p-3 text-[9px] font-Poppins font-normal  bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">05</span>
           </a>
-       </li>
+        </li>
 
-       <li>
-        <a href="Drivers.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]    hover:bg-[#EDF0F2]">
-           <span class="font-medium text-xs tect-[#263252]">Drivers</span>
-           <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">48</span>
-        </a>
-     </li>
-     <li>
-      <a href="Syscalls.html" class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]     hover:bg-[#EDF0F2]">
-         <span class="font-medium text-xs tect-[#263252]">Syscalls</span>
-         <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">24</span>
-      </a>
-   </li>
-   <li>
-    <a href="Objects.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-       <span class="font-medium text-xs tect-[#263252]">Objects</span>
-       <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">89</span>
-    </a>
- </li>
- <li>
-  <a href="Registry.html" class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]   hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]">Registry</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">56</span>
-  </a>
-</li>
-<li>
-  <a href="Sockets.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]" >Sockets</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">48</span>
-  </a>
-</li>
-<li>
-  <a href="Callbacks.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]">Callbacks</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">25</span>
-  </a>
-</li>
-<li>
-  <a href="Scheduled.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]   hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]">Scheduled Ta...</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">89</span>
-  </a>
-</li>
-<li>
-  <a href="Autoruns.html" class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252] hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]">Autoruns</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">26</span>
-  </a>
-</li>
-<li>
-  <a href="Console.html" class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-     <span class="font-medium text-xs tect-[#263252]" >Console</span>
-     <span class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">48</span>
-  </a>
-</li>
-     </ul>
-  </div>
-  <button aria-label="Close sidebar" id="closeSideBar" class="h-10 w-10 bg-sidbscolor absolute right-0 mt-16 -mr-10 flex items-center shadow rounded-tr bg-[#114273] rounded-br justify-center cursor-pointer top-0 text-white" onclick="sidebarHandler(false)">
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+        <li>
+          <a href="Console.html"
+            class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
+            <span class="font-medium text-xs tect-[#263252]">Console</span>
+            <span
+              class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">48</span>
+          </a>
+        </li>
+      </ul>
+    </div> 
+    <button aria-label="Close sidebar" id="closeSideBar"
+    class="h-10 w-10 bg-sidbscolor absolute right-0 mt-16 -mr-10 flex lg:hidden items-center shadow rounded-tr bg-[#114273] rounded-br justify-center cursor-pointer top-0 text-white"
+    onclick="sidebarHandler(false)">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="20" height="20"
+      viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+      stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z"></path>
       <line x1="18" y1="6" x2="6" y2="18"></line>
       <line x1="6" y1="6" x2="18" y2="18"></line>
     </svg>
-  </button>
-</aside>
+  </button> 
+  </aside>
+  <!----//////////////////Left Sidebar end/////////////////////////////-->
 
-<div class="lg:hidden block  absolute top-12 left-2">
-  <button aria-label="toggle sidebar" id="openSideBar" class="h-10 w-16 flex items-center justify-start cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 rounded focus:ring-gray-800" onclick="sidebarHandler(true)">
-    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="#102232"></path>
+
+
+   <!----//////////////////Burgur Menu/////////////////////////////-->
+   <div class="lg:hidden block absolute top-[104px] left-4  w-8 ">
+    <button aria-label="toggle sidebar" id="openSideBar"
+      class="h-10 w-full outline-none flex items-center justify-start cursor-pointer focus:outline-none rounded focus:ring-gray-800"
+      onclick="sidebarHandler(true)">
+      <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="#102232"></path>
       </svg>
-      
-  </button>
-</div>
+    </button>
+  </div>
+<!----//////////////////Burgur Menu end/////////////////////////////-->
 
 <div class="rightsideoverview lg:ml-52 ml:0">
 
 <div class="flex justify-between items-center">
+  <!----//////////////////Breadcurbe/////////////////////////////-->
 <div class="flex">
   <a href="#" class="flex items-center font-Poppins font-medium text-sm text-[#D7DADB]">
     <svg width="12" height="13" class="mr-1" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -327,10 +318,13 @@
      <a href="#" class="flex items-center font-Poppins font-medium text-sm text-[#263252]">
       Notepad.exe /</a>
     </div>
+    <!----//////////////////Breadcurbe End/////////////////////////////-->
     <div class="text-right pr-2">
       <p class="font-Poppins text-xs font-medium text-[#263252]">Created at : July 25, 2022,  04:28 PM</p>
     </div>
   </div>
+
+  <!----//////////////////Head Buttons/////////////////////////////-->
   <div class="flex space-x-2 flex-wrap mt-5 justify-between items-center">
     <h1 class="font-semibold text-2xl  text-blue flex items-center ">
       <svg class="mr-3 " width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -366,9 +360,13 @@
         </div>
     </div>
 
+<!----//////////////////Head Buttons End/////////////////////////////-->
 
+
+<!-----/////////////////////up all tab/////////////////////-->
 
     <div class="bg-white px-7 py-6 my-4  ">
+      <!-----/////////////////////link tab/////////////////////-->
     <ul class="nav cstometab nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4" id="tabs-tab"
        role="tablist">
     <li class="nav-item pr-5" role="presentation">
@@ -430,7 +428,13 @@
         aria-controls="tabs-contact" aria-selected="false">User Info</a>
     </li>
   </ul>
+
+  <!-----/////////////////////link tab End/////////////////////-->
+
+  <!-----/////////////////////all tab content/////////////////////-->
+
   <div class="tab-content" id="tabs-tabContent">
+    <!---------------/////////////firast tab//////////////////-->
     <div class="tab-pane fade show active" id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab">
       <div class="gap-x-14 mb-8 columns-3">
         <div class="mb-3">
@@ -496,6 +500,9 @@
       </div>
 
     </div>
+        <!---------------/////////////firast tab end//////////////////-->
+        <!---------------/////////////tow tab //////////////////-->
+        
     <div class="tab-pane fade" id="tabs-profile" role="tabpanel" aria-labelledby="tabs-profile-tab">
       <div class="gap-x-14 mb-8 columns-3">
         <div class="mb-3">
@@ -555,6 +562,9 @@
        
       </div>
     </div>
+    <!---------------/////////////tow tab end//////////////////-->
+
+    <!---------------/////////////three tab //////////////////-->
     <div class="tab-pane fade" id="tabs-messages" role="tabpanel" aria-labelledby="tabs-profile-tab">
      
    <div class="relative overflow-x-auto">
@@ -607,6 +617,9 @@
 </table>
    </div>
     </div>
+    <!---------------/////////////three tab end//////////////////-->
+
+    <!---------------/////////////four tab //////////////////-->
     <div class="tab-pane fade" id="tabs-contact" role="tabpanel" aria-labelledby="tabs-contact-tab">
       <div class="relative overflow-x-auto">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -643,9 +656,12 @@
       </table>
          </div>
     </div>
+    <!---------------/////////////four tab //////////////////-->
   </div>
+  <!-----/////////////////////all tab content End/////////////////////-->
   </div>
 
+<!-----/////////////////////up all tab End/////////////////////-->
 
 
 
@@ -663,11 +679,7 @@
 
 
 
-
-
-
-
-
+<!----------///////////////////////////Playbooks ////////////////////////////-->
   <div class="bg-white ">
 
   <div class="flex items-start ">
@@ -773,7 +785,7 @@
         <h5 class="text-xs font-Poppins mb-4 font-semibold text-[#263252] ">Queries (2)</h5>
 
 
-        <div class="accordion accordion-flush w-full" id="accordionFlushExample">
+        <div class="accordion accordion-flush w-full" id="accordionQueries">
           <div class="accordion-item mb-1 ">
             <h2 class="accordion-header mb-0" id="flush-headingOne">
               <button class="accordion-button collapsed relative flex items-center w-full py-2 px-5 text-xs font-Poppins text-gray-800 text-left bg-acordionrgba border-0 rounded-none transition focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -781,7 +793,7 @@
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse border-0 collapse"
-              aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              aria-labelledby="flush-headingOne" data-bs-parent="#accordionQueries">
               <div class="accordion-body ">
                
 
@@ -936,7 +948,7 @@
               </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlushExample">
+              data-bs-parent="#accordionQueries">
               <div class="accordion-body py-4 px-5">
                 <p class="font-Poppins text-xs text">Placeholder content for this accordion, which is intended to demonstrate the .accordion-flush class. This is the first item's accordion body.</p>
               </div>
@@ -973,14 +985,14 @@
           <h5 class="text-xs font-Poppins mb-4 font-semibold text-[#263252] ">Queries (2)</h5>
   
   
-          <div class="accordion accordion-flush w-full" id="accordionFlushExample">
+          <div class="accordion accordion-flush w-full" id="accordionQueries">
             <div class="accordion-item mb-1 ">
               <h2 class="accordion-header mb-0" id="flush-headingOne">
                 <button class="accordion-button relative flex items-center w-full py-2 px-5 text-xs font-Poppins text-gray-800 text-left bg-acordionrgba border-0 rounded-none transition focus:outline-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   Query 1
                 </button>
               </h2>
-              <div id="flush-collapseOne" class="accordion-collapse border-0 collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
+              <div id="flush-collapseOne" class="accordion-collapse border-0 collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionQueries" style="">
                 <div class="accordion-body py-4 px-5">
                   <p class="font-Poppins text-xs text">Placeholder content for this accordion, which is intended to demonstrate the .accordion-flush class. This is the first item's accordion body.</p>
                 </div>
@@ -992,7 +1004,7 @@
                   Query 2
                 </button>
               </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample" style="">
+              <div id="flush-collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionQueries" style="">
                 <div class="accordion-body py-4 px-5">
                   <p class="font-Poppins text-xs text">Placeholder content for this accordion, which is intended to demonstrate the .accordion-flush class. This is the first item's accordion body.</p>
                 </div>
@@ -1028,14 +1040,14 @@
           <h5 class="text-xs font-Poppins mb-4 font-semibold text-[#263252] ">Queries (2)</h5>
   
   
-          <div class="accordion accordion-flush w-full" id="accordionFlushExample">
+          <div class="accordion accordion-flush w-full" id="accordionQueries">
             <div class="accordion-item mb-1 ">
               <h2 class="accordion-header mb-0" id="flush-headingOne">
                 <button class="accordion-button collapsed relative flex items-center w-full py-2 px-5 text-xs font-Poppins text-gray-800 text-left bg-acordionrgba border-0 rounded-none transition focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   Query 1
                 </button>
               </h2>
-              <div id="flush-collapseOne" class="accordion-collapse border-0 collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div id="flush-collapseOne" class="accordion-collapse border-0 collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionQueries">
                 <div class="accordion-body py-4 px-5">
                   <p class="font-Poppins text-xs text">Placeholder content for this accordion, which is intended to demonstrate the .accordion-flush class. This is the first item's accordion body.</p>
                 </div>
@@ -1047,7 +1059,7 @@
                   Query 2
                 </button>
               </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div id="flush-collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionQueries">
                 <div class="accordion-body py-4 px-5">
                   <p class="font-Poppins text-xs text">Placeholder content for this accordion, which is intended to demonstrate the .accordion-flush class. This is the first item's accordion body.</p>
                 </div>
@@ -1062,10 +1074,15 @@
     </div>
   </div>
 </div>
+
+<!----------///////////////////////////Playbooks End////////////////////////////-->
+
+
+
 </div>
 
 </div>
-  
+  <!----/////////////////////////////////////right menu////////////////////////////////////////-->
   <div class="rightsidmenu transition duration-700	 fixed -right-52 w-52 pt-6 h-full top-16 bg-[#FAFBFC] border-l border-[#E6E9EB]">
     <div class="p-4">
       <ul>
@@ -1079,18 +1096,124 @@
       </svg>
       
   </button>
+  <!----------///////////////////////////////right menu end////////////////////////////////-->
   </main>
 
 
  
 
 
-
+<!--------////////////////////////////////footer////////////////////////////////////////-->
   <footer class="bg-bacgrediant fixed left-0 right-0 bottom-0 text-center p-2">
 <p class="text-sm font-Poppins font-normal text-white ">©  2022 Magnet Forensics Inc. <a href="#" class="font-medium underline-offset-1 underline"> Terms & Services </a> </p>
   </footer>
-
+<!-------------////////////////////////////////footer End/////////////////////////////////////------------>
   
+<!---//////////////////////////Pending Invitations2 model////////////////////////////-->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="Pendinginvitations" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
+  <div class="modal-dialog modal-lg relative w-auto pointer-events-none">
+    <div class="modal-content py-5 px-6 border border-[#EDF0F2] border-solid  shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-lg outline-none text-current">
+      <div class="modal-header flex flex-shrink-0 items-center justify-between pb-4 border-b border-gray-200 rounded-t-md">
+        <h5 class="text-lg font-semibold font-Poppins leading-normal text[#114273]" id="exampleModalLgLabel">
+          Pending Invitations
+        </h5>
+        <div class="model-left flex items-center">
+        <button type="button"
+          class="btn-close ml-8 box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    <div class="bottom">
+      <p class="font-Poppins mt-3 mb-4 text-sm font-normal text-[#969899]">You are invited to join pending invitations</p>
+      <div class="flex border-b p-3 border-solid border-[#E6E9EB] items-center justify-between">
+        <div class="left">
+          <h3 class="text-base font-semibold font-Poppins text-black"><span class="font-normal">Join</span> Comae Response Team <span class="font-normal">organisation as</span> Admin</h3>
+          <p class="text-[ #969899] font-normal text-xs font-Poppins mt-[6px]">Invitation sent on 28/09/22 at 04:00 pm</p>
+        </div>
+        <div class="right">
+          <button type="button" class=" font-medium text-sm text-[#AFB1B3] font-Poppins items-center py-2 px-7">Decline</button>
+          <button type="button" class="font-medium text-sm text-white font-Poppins text-center items-center bg-[#3CD2A5] border border-solid border-[#00A682] rounded py-2 px-7">Accept</button>
+        </div>
+      </div>
+      <div class="flex border-b p-3 border-solid border-[#E6E9EB] items-center justify-between">
+        <div class="left">
+          <h3 class="text-base font-semibold font-Poppins text-black"><span class="font-normal">Join</span> Comae Response Team <span class="font-normal">organisation as</span> Admin</h3>
+          <p class="text-[ #969899] font-normal text-xs font-Poppins mt-[6px]">Invitation sent on 28/09/22 at 04:00 pm</p>
+        </div>
+        <div class="right">
+          <button type="button" class=" font-medium text-sm text-[#AFB1B3] font-Poppins items-center py-2 px-7">Decline</button>
+          <button type="button" class="font-medium text-sm text-white font-Poppins text-center items-center bg-[#3CD2A5] border border-solid border-[#00A682] rounded py-2 px-7">Accept</button>
+        </div>
+      </div>
+      <div class="text-center mt-40">
+        <button  data-bs-dismiss="modal" aria-label="Close" type="button" class=" font-medium text-sm text-[#00A682] font-Poppins text-center items-center border border-solid border-[#00A682] rounded py-2 px-14">Close</button>
+      </div>
+    </div>
+  
+          
+      </div>
+    </div>
+  </div>
+<!---//////////////////////////Pending Invitations2 model end//////////////////////////////////////////////-->
+
+
+<!---///////////////////////////////Manage Organisation Users model/////////////////////////////-->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="Organisationuser" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
+  <div class="modal-dialog modal-lg relative w-auto pointer-events-none">
+    <div class="modal-content py-5 px-6 border border-[#EDF0F2] border-solid  shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-lg outline-none text-current">
+      <div class="modal-header flex flex-shrink-0 items-center justify-between pb-4 border-b border-gray-200 rounded-t-md">
+        <h5 class="text-lg font-semibold font-Poppins  text-[#114273]" id="exampleModalLgLabel">
+          Manage Organisation Users
+        </h5>
+        <div class="model-left flex items-center">
+        <button type="button"
+          class="btn-close ml-8 box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    <div class="bottom">
+      <p class="font-Poppins mt-3 mb-4 text-sm font-normal text-[#969899]">You are invited to join pending invitations</p>
+      <div class="flex items-center ">
+        <div class="mb-3 xl:w-8/12 pr-9">
+          <div class="relative">
+          <label for="exampleFormControlInput1" class="form-label absolute rounded-md py-1 px-2 top-[-9px] left-2 text-[10px] font-Poppins font-normal bg-[#E9F7EF] text-[#259D58]">Active</label>
+          <input type="text" class=" form-control block  px-4  py-4 text-base font-normal
+              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300  rounded
+            w-full
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1"
+            placeholder="radovan.stevanovic@magnetforensics.com"/>
+        </div>
+        </div>
+        <div class="mb-3 xl:w-1/3">
+          <input type="text" class=" form-control block  px-4  py-4 text-base font-normal
+          text-gray-700 bg-[#FAFBFC] bg-clip-padding border border-solid border-gray-300 w-full  rounded
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1"
+        placeholder="Owner"/>
+        </div>
+      </div>
+
+      </div>
+      <div class="text-center flex justify-end mt-40">
+        <button type="button" class=" font-medium text-sm text-[#114273] font-Poppins text-center items-center border border-solid border-[#114273] rounded py-2 px-4 flex ">
+          <svg class="flex mr-1 " width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.00008 2.66797V13.3346M13.3334 8.0013H2.66675" stroke="#114273" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Add new member</button>
+          <div class="text-center flex ml-4">
+            <button type="button" class=" font-medium text-sm text-white font-Poppins text-center items-center border border-solid border-[#00A682] bg-[#3CD2A5] rounded py-2 px-7 flex ">
+              Save Changes</button>
+          </div>
+      </div>
+     
+    </div>
+  
+          
+      </div>
+    </div>
+<!---/////////////////////////////Manage Organisation Users model end///////////////////////////////////////-->
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="node_modules/tw-elements/dist/js/index.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
