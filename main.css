@@ -117,6 +117,13 @@ button.viewbut.open+ .dropdown-content {  display: block;}
  .succestol{visibility: hidden;}
 .succesfulfi:hover .succestol{visibility: visible;}
  .modal {background: rgb(15 27 51 / 48%);}
+ #processaccordion .accordion-button::after {transition: none;position: absolute;left: 8px;background: none; content: "+"; font-size: 18px; color:black; top: 5px;}
+ #processaccordion .accordion-button:not(.collapsed)::after {transform: none;background: #edf0f2;
+  left: 5px; top: 8px;color:black;font-size: 18px; border-radius:60px;text-align: center; content: "-";}
+#huntresult .accordion-button:not(.collapsed){box-shadow: none;}
+#huntresult .accordion-button::after { position: absolute; top: -3px; left: -3px;}
+
+
 @media screen and (max-width: 639px) {
   .container {
     max-width: 100%;
