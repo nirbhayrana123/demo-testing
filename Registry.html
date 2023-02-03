@@ -173,6 +173,38 @@
                 </div>
 
 
+   <div class="pb-10 text-right">
+    <div class="relative ">
+      <label class="relative inline-flex items-center mr-5 cursor-pointer">
+        <input id="tableview" type="checkbox" value="" class="sr-only peer" checked="checked">
+        <div class="w-8 h-4 bg-gray-200 rounded-full  dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.6 after:left-[0px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-[#3CD2A5]"></div>
+        <span class="nocheked ml-3 text-base font-Poppins font-normal text-[#3CD2A5]">Table View</span>
+      </label>
+      
+      </div>
+   </div>
+  <!----------------------------Driverstable----------------------------------->
+   <div class="registryall">
+ <div class="registry">
+    <div class="tableview max-h-screen overflow-y-auto  mt-5 pr-3">
+    <div class="accordion" id="registryaccordion">
+      <div class="accordion-item mb-1 rounded-none bg-white border border-gray-200 border-none">
+        <h2 class="accordion-header mb-0" id="headingOne">
+          <button class="accordion-button relative flex collapsed items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
+          " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+            aria-controls="collapseOne">
+            <span class="pl-4">\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows</span>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+         
+ <div class="px-4">
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">AppInit_DLLs</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="0">
               </div>
 
 
@@ -220,1119 +252,444 @@
 
                   Logout</a>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-------///////////////////Header End///////////////////////------->
-  </div>
-
-  <!--header end-->
-
-  <main class="  xl:mt-14 mt-20  md:px-10 px-4 relative pt-10 pb-6 min-h-screen ">
-
-    <div class="mainoverview">
-      <!---////////////////////Left Sidebar/////////////////////////-->
-      <aside class="w-44 lg:block calc bg-white rounded-md fixed ease-in-out z-50" aria-label="Sidebar" id="mobile-nav">
-        <div class=" pt-11 pb-4 overflow-y-auto scroole h-full rounded-lg bg-white dark:bg-gray-800">
-          <ul class="space-y-2 menus">
-            <li>
-              <a href="overview.html"
-                class="pl-3 flex   relative justify-between items-center p-2 text-xs font-normal font-Poppins text-[#263252]    hover:bg-[#EDF0F2]">
-                <span class="font-medium text-xs tect-[#263252]">Overview</span>
-                <span
-                  class="flex p-3 text-[9px] font-Poppins font-normal  bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">05</span>
-              </a>
-            </li>
-            <li>
-              <a href="Process.html"
-                class="pl-3 flex   relative justify-between items-center p-2 text-xs font-normal font-Poppins text-[#263252]    hover:bg-[#EDF0F2]">
-                <span class="font-medium text-xs tect-[#263252]">Processes</span>
-                <span
-                  class="flex p-3 text-[9px] font-Poppins font-normal  bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">05</span>
-              </a>
-            </li>
-            <li>
-              <a href="Drivers.html"
-                class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]     hover:bg-[#EDF0F2]">
-                <span class="font-medium text-xs tect-[#263252]">Drivers</span>
-                <span
-                  class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">24</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="Syscalls.html"
-                class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]     hover:bg-[#EDF0F2]">
-                <span class="font-medium text-xs tect-[#263252]">Syscalls</span>
-                <span
-                  class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">24</span>
-              </a>
-            </li>
-            <li>
-              <a href="Objects.html"
-                class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-                <span class="font-medium text-xs tect-[#263252]">Objects</span>
-                <span
-                  class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">89</span>
-              </a>
-            </li>
-            <li>
-              <a href="Registry.html"
-                class="pl-3 flex active bg-[#EDF0F2] relative justify-between items-center p-2 text-xs font-Poppins font-normal text-[#263252]    hover:bg-[#EDF0F2]">
-                <span class="font-medium text-xs tect-[#263252]">Registry</span>
-                <span
-                  class="flex p-3 text-[9px] font-Poppins font-normal bg-[#114273] items-center justify-center w-2 h-2 rounded-full text-white">56</span>
-              </a>
-            </li> 
-            <li>
-              <a href="Sockets.html"
-                class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-                <span class="font-medium text-xs tect-[#263252]">Sockets</span>
-                <span
-                  class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">48</span>
-              </a>
-            </li>
-            <li>
-              <a href="Callbacks.html"
-                class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-                <span class="font-medium text-xs tect-[#263252]">Callbacks</span>
-                <span
-                  class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">25</span>
-              </a>
-            </li>
-            <li>
-              <a href="Scheduled.html"
-                class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252]   hover:bg-[#EDF0F2]">
-                <span class="font-medium text-xs tect-[#263252]">Scheduled Ta...</span>
-                <span
-                  class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">89</span>
-              </a>
-            </li>
-
-            
-            <li>
-              <a href="Autoruns.html"
-                class="pl-3 flex font-Poppins justify-between items-center p-2 text-xs font-normal text-[#263252] hover:bg-[#EDF0F2]">
-                <span class="font-medium text-xs tect-[#263252]">Autoruns</span>
-                <span
-                  class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">26</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="Console.html"
-                class="pl-3 flex font-Poppins  justify-between items-center p-2 text-xs font-normal text-[#263252]  hover:bg-[#EDF0F2]">
-                <span class="font-medium text-xs tect-[#263252]">Console</span>
-                <span
-                  class="flex p-3 text-[9px] font-Poppins font-normal bg-[#E6E9EB] items-center justify-center w-2 h-2 rounded-full text-[#263252]">48</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <button aria-label="Close sidebar" id="closeSideBar"
-          class="h-10 w-10 bg-sidbscolor absolute right-0 mt-16 -mr-10 flex lg:hidden items-center shadow rounded-tr bg-[#114273] rounded-br justify-center cursor-pointer top-0 text-white"
-          onclick="sidebarHandler(false)">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="20" height="20"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z"></path>
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
-      </aside>
-      <!----//////////////////Left Sidebar end/////////////////////////////-->
-
-
-      <!----//////////////////Burgur Menu/////////////////////////////-->
-      <div class="lg:hidden block absolute top-[104px] left-4  w-8 ">
-        <button aria-label="toggle sidebar" id="openSideBar"
-          class="h-10 w-full outline-none flex items-center justify-start cursor-pointer focus:outline-none rounded focus:ring-gray-800"
-          onclick="sidebarHandler(true)">
-          <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="#102232"></path>
-          </svg>
-        </button>
-      </div>
-      <!----//////////////////Burgur Menu end/////////////////////////////-->
-
-      <div class="rightsideoverview lg:ml-52 ml:0">
-        <div class="flex justify-between items-center">
-          <!----//////////////////Breadcurbe/////////////////////////////-->
-          <div class="flex">
-            <a href="#" class="flex items-center font-Poppins font-medium text-sm text-[#D7DADB]">
-              <svg width="12" height="13" class="mr-1" viewBox="0 0 12 13" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M4.3286 11.6181V9.83443C4.3286 9.37911 4.70041 9.01 5.15907 9.01H6.83567C7.05592 9.01 7.26716 9.09686 7.4229 9.25147C7.57864 9.40609 7.66614 9.61578 7.66614 9.83443V11.6181C7.66474 11.8074 7.73952 11.9894 7.87386 12.1238C8.00821 12.2581 8.19101 12.3337 8.3817 12.3337H9.52555C10.0598 12.335 10.5726 12.1253 10.9508 11.7508C11.3291 11.3763 11.5416 10.8677 11.5416 10.3374V5.25599C11.5416 4.82759 11.3504 4.42123 11.0193 4.14638L7.12816 1.06125C6.45128 0.52032 5.48146 0.537785 4.82479 1.10273L1.0224 4.14638C0.675745 4.41313 0.468552 4.8207 0.458313 5.25599V10.3322C0.458313 11.4376 1.36095 12.3337 2.47441 12.3337H3.59215C3.9882 12.3337 4.31006 12.0164 4.31293 11.6233L4.3286 11.6181Z"
-                  fill="#D7DADB"></path>
-              </svg> Home /</a>
-            <a href="#" class="flex items-center font-Poppins font-medium text-sm text-[#D7DADB]">
-              File case /</a>
-            <a href="#" class="flex items-center font-Poppins font-medium text-sm text-[#263252]">
-              Notepad.exe /</a>
-          </div>
-          <!----//////////////////Breadcurbe end/////////////////////////////-->
-          <div class="text-right pr-2">
-            <p class="font-Poppins text-xs font-medium text-[#263252]">Created at : July 25, 2022, 04:28 PM</p>
-          </div>
-        </div>
-        <!----//////////////////Head Buttons/////////////////////////////-->
-        <div class="flex space-x-2 flex-wrap mt-5 justify-between items-center">
-          <h1 class="font-semibold text-2xl  text-blue flex items-center ">
-            <svg class="mr-3 " width="32" height="32" viewBox="0 0 32 32" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M26.6667 16.3648C26.6667 16.8711 26.2905 17.2895 25.8024 17.3557L25.6667 17.3648L8.08799 17.364L14.4386 23.6887C14.83 24.0784 14.8314 24.7116 14.4417 25.1029C14.0874 25.4587 13.5319 25.4922 13.1398 25.2026L13.0275 25.106L4.96081 17.074C4.90922 17.0226 4.86441 16.967 4.82638 16.9083C4.81564 16.8907 4.80471 16.8726 4.79434 16.8541C4.78481 16.8383 4.77619 16.8219 4.76806 16.8053C4.75677 16.7812 4.74574 16.7562 4.73573 16.7308C4.72759 16.7111 4.7208 16.6921 4.7146 16.6728C4.70723 16.649 4.70008 16.6235 4.69392 16.5977C4.68934 16.5797 4.68571 16.5624 4.68255 16.5449C4.67811 16.519 4.67432 16.4922 4.67162 16.4651C4.66929 16.4444 4.66788 16.4239 4.66711 16.4034C4.66691 16.3909 4.66666 16.3779 4.66666 16.3648L4.66716 16.3261C4.66792 16.3065 4.66926 16.2869 4.67118 16.2673L4.66666 16.3648C4.66666 16.3017 4.6725 16.24 4.68368 16.1801C4.68627 16.1658 4.68936 16.1511 4.69278 16.1365C4.69988 16.1064 4.70809 16.0774 4.71755 16.049C4.72219 16.0349 4.72759 16.0198 4.73337 16.0048C4.74505 15.9748 4.75776 15.9461 4.77173 15.9181C4.77822 15.905 4.78549 15.8912 4.7931 15.8776C4.8056 15.8554 4.81847 15.8343 4.83209 15.8137C4.84169 15.7992 4.85233 15.784 4.86343 15.7691L4.87209 15.7576C4.89903 15.7224 4.92826 15.689 4.95955 15.6577L4.96075 15.6568L13.0274 7.62346C13.4187 7.23375 14.0519 7.23506 14.4416 7.62639C14.7959 7.98215 14.827 8.53776 14.5358 8.92864L14.4387 9.0406L8.09066 15.364L25.6667 15.3648C26.2189 15.3648 26.6667 15.8125 26.6667 16.3648Z"
-                fill="#263252"></path>
-            </svg>
-            Notepad.exe.zip
-            <svg class="ml-3" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12.6666 8.53064C12.298 8.53064 12 8.82935 12 9.19727V14.5306C12 14.8979 11.7013 15.1973 11.3334 15.1973H2C1.63196 15.1973 1.33337 14.8979 1.33337 14.5306V5.19727C1.33337 4.82996 1.63196 4.53064 2 4.53064H7.33337C7.70203 4.53064 8 4.23193 8 3.86401C8 3.49597 7.70203 3.19727 7.33337 3.19727H2C0.897339 3.19727 0 4.0946 0 5.19727V14.5306C0 15.6333 0.897339 16.5306 2 16.5306H11.3334C12.436 16.5306 13.3334 15.6333 13.3334 14.5306V9.19727C13.3334 8.82861 13.0353 8.53064 12.6666 8.53064Z"
-                fill="#AFB1B3"></path>
-              <path
-                d="M6.2506 7.9231C6.20397 7.96973 6.1726 8.02905 6.15929 8.09302L5.68798 10.4504C5.666 10.5597 5.70067 10.6724 5.77929 10.7517C5.84264 10.8151 5.92797 10.849 6.01537 10.849C6.03661 10.849 6.0587 10.847 6.08068 10.8424L8.43737 10.3711C8.50267 10.3577 8.562 10.3264 8.60802 10.2797L13.8827 5.005L11.526 2.64844L6.2506 7.9231Z"
-                fill="#AFB1B3"></path>
-              <path
-                d="M15.512 1.01877C14.8621 0.368744 13.8047 0.368744 13.1553 1.01877L12.2327 1.94138L14.5894 4.29807L15.512 3.37534C15.8267 3.06137 16 2.64267 16 2.19736C16 1.75204 15.8267 1.33334 15.512 1.01877Z"
-                fill="#AFB1B3"></path>
-            </svg>
-          </h1>
-          <div class="flex items-center xl:mt-0 mt-3 flex-wrap ">
-            <button type="button"
-              class="px-4 py-2  mr-4 xl:mt-0 mt-2 bg-blue-600 text-blue font-medium text-sm leading-tight rounded-md border  bg-transparent font-Poppins  flex items-center border-[#114273] ">
-              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M9.31727 1.83398C9.34596 1.83398 9.37409 1.8364 9.40146 1.84105L9.49153 1.84158C9.62753 1.84158 9.75753 1.89692 9.8522 1.99492L13.2295 5.51292C13.3182 5.60558 13.3683 5.73025 13.3683 5.85892V11.9856C13.3789 13.6583 12.0749 15.0176 10.3995 15.0776H4.97287C3.34605 15.0426 2.04134 13.728 2.00111 12.1177L2.00087 4.82758C2.0402 3.17358 3.40553 1.84158 5.04687 1.84158L9.23307 1.84105C9.26045 1.8364 9.28858 1.83398 9.31727 1.83398ZM8.81687 2.84132L5.04887 2.84158C3.9442 2.84158 3.02687 3.73625 3.00087 4.83958V11.9856C2.97687 13.1196 3.8702 14.0529 4.99353 14.0776H10.3822C11.4949 14.0376 12.3755 13.1196 12.3682 11.9889L12.3682 6.48932L11.0293 6.48998C9.8086 6.48665 8.81727 5.49198 8.81727 4.27332L8.81687 2.84132ZM7.42847 6.60658C7.70447 6.60658 7.92847 6.83058 7.92847 7.10658L7.9282 9.92132L8.63647 9.21058C8.83113 9.01458 9.1478 9.01458 9.3438 9.20925C9.53913 9.40392 9.5398 9.72058 9.34513 9.91658L7.79912 11.4694C7.75991 11.5127 7.71323 11.5491 7.66111 11.5766C7.65646 11.578 7.65225 11.5801 7.64801 11.5822C7.62862 11.5927 7.60811 11.6012 7.58698 11.6082C7.58492 11.608 7.5829 11.6086 7.58088 11.6093C7.53288 11.6256 7.48164 11.6339 7.42847 11.6339C7.37678 11.6339 7.32691 11.6261 7.28 11.6115C7.27263 11.6087 7.26478 11.6061 7.25699 11.6032C7.24243 11.5984 7.22848 11.5925 7.21486 11.5861C7.20672 11.5819 7.19871 11.5778 7.19081 11.5736C7.175 11.5653 7.15951 11.5558 7.14461 11.5455C7.13952 11.5418 7.13448 11.5382 7.12949 11.5345C7.10803 11.5186 7.08793 11.5009 7.06936 11.4817L5.51047 9.91658C5.3158 9.72058 5.31647 9.40392 5.5118 9.20925C5.7078 9.01458 6.02447 9.01458 6.21913 9.21058L6.9282 9.92265L6.92847 7.10658C6.92847 6.83058 7.15247 6.60658 7.42847 6.60658ZM9.81687 3.40198L9.81727 4.27332C9.81727 4.94265 10.3613 5.48798 11.0306 5.48998L11.8202 5.48932L9.81687 3.40198Z"
-                  fill="#114273"></path>
-              </svg>
-              Download Metadata </button>
-
-            <button type="button"
-              class="px-4  font-Poppins xl:mt-0 mt-2 py-2 mr-4 bg-blue-600 text-blue font-medium text-sm leading-tight rounded-md border  bg-transparent    flex items-center border-[#114273] ">
-              <img src="src/images/Frame.png">
-              Process Again </button>
-
-
-            <button type="button"
-              class="px-4 py-2 mr-4 xl:mt-0 mt-2 font-Poppins bg-blue-600 text-blue font-medium text-sm leading-tight rounded-md border  bg-transparent   flex items-center border-[#114273] ">
-              <svg class="mr-1" width="17" height="17" viewBox="0 0 17 17" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M9.81727 1.8335C9.84596 1.8335 9.87409 1.83592 9.90146 1.84056L9.99154 1.8411C10.1275 1.8411 10.2575 1.89643 10.3522 1.99443L13.7295 5.51243C13.8182 5.6051 13.8683 5.72976 13.8683 5.85843V11.9851C13.8789 13.6578 12.5749 15.0171 10.8995 15.0771H5.47287C3.84605 15.0421 2.54134 13.7275 2.50111 12.1173L2.50087 4.8271C2.5402 3.1731 3.90554 1.8411 5.54687 1.8411L9.73308 1.84056C9.76045 1.83592 9.78858 1.8335 9.81727 1.8335ZM9.31687 2.84083L5.54887 2.8411C4.4442 2.8411 3.52687 3.73576 3.50087 4.8391V11.9851C3.47687 13.1191 4.3702 14.0524 5.49354 14.0771H10.8822C11.9949 14.0371 12.8755 13.1191 12.8682 11.9884L12.8682 6.48883L11.5293 6.4895C10.3086 6.48616 9.31727 5.4915 9.31727 4.27283L9.31687 2.84083ZM7.92847 6.6061C8.20447 6.6061 8.42847 6.8301 8.42847 7.1061L8.4282 9.92083L9.13647 9.2101C9.33114 9.0141 9.6478 9.0141 9.8438 9.20876C10.0391 9.40343 10.0398 9.7201 9.84514 9.9161L8.29913 11.4689C8.25991 11.5122 8.21323 11.5486 8.16111 11.5761C8.15647 11.5775 8.15226 11.5796 8.14802 11.5817C8.12862 11.5922 8.10812 11.6007 8.08699 11.6077C8.08492 11.6075 8.0829 11.6082 8.08088 11.6088C8.03288 11.6251 7.98164 11.6334 7.92847 11.6334C7.87678 11.6334 7.82692 11.6256 7.78001 11.611C7.77264 11.6082 7.76478 11.6056 7.75699 11.6027C7.74244 11.5979 7.72848 11.592 7.71487 11.5856C7.70673 11.5814 7.69871 11.5773 7.69081 11.5731C7.67501 11.5648 7.65952 11.5553 7.64462 11.545C7.63953 11.5413 7.63448 11.5377 7.6295 11.534C7.60803 11.5181 7.58793 11.5004 7.56936 11.4812L6.01047 9.9161C5.8158 9.7201 5.81647 9.40343 6.0118 9.20876C6.2078 9.0141 6.52447 9.0141 6.71914 9.2101L7.4282 9.92216L7.42847 7.1061C7.42847 6.8301 7.65247 6.6061 7.92847 6.6061ZM10.3169 3.4015L10.3173 4.27283C10.3173 4.94216 10.8613 5.4875 11.5306 5.4895L12.3202 5.48883L10.3169 3.4015Z"
-                  fill="#114273"></path>
-              </svg>
-              Download DumpIT</button>
-
-            <button type="button"
-              class="px-12  xl:mt-0 mt-2 py-2 bg-blue-600 text-white font-medium text-sm leading-tight rounded-md border font-Poppins flex items-center border-[#CBA14E]  bg-[#EEBE5E]">
-              Hunt/Diff</button>
-          </div>
-        </div>
-        <!----//////////////////Head Buttons end/////////////////////////////-->
-        <!-----------------------All Processes------------------------>
-        <div class="prosessmain ">
-          <div class="list-view  p-6 bg-white rounded-md mt-5">
-            <div class="pb-10 text-right">
-              <div class="relative ">
-                <label class="relative inline-flex items-center mr-5 cursor-pointer">
-                  <input id="tableview" type="checkbox" value="" class="sr-only peer" checked="checked">
-                  <div
-                    class="w-8 h-4 bg-gray-200 rounded-full  dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.6 after:left-[0px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-[#3CD2A5]">
-                  </div>
-                  <span class="nocheked ml-3 text-base font-Poppins font-normal text-[#3CD2A5]">Table View</span>
-                </label>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">DesktopHeapLogging</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1">
               </div>
             </div>
-            <!----------------------------Driverstable----------------------------------->
-            <div class="registryall">
-              <div class="registry">
-                <div class="tableview max-h-screen overflow-y-auto  mt-5 pr-3">
-                  <div class="accordion" id="accordionExample">
-                    <div class="accordion-item mb-1 rounded-none bg-white border border-gray-200">
-                      <h2 class="accordion-header mb-0" id="headingOne">
-                        <button class="accordion-button relative flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
-          " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                          aria-controls="collapseOne">
-                          \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-
-                        <div class="px-4">
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">AppInit_DLLs</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">DdeSendTimeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">DesktopHeapLogging</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Device
-                                Not Selected Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="15">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Dwm
-                                Input UsesIo Completion Port</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Enable
-                                Dwm Input Processing</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">GDI
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1000">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Icon
-                                Service Lib</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="IconCodecService.dll">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">LoadAppInit_DLLs</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                          </div>
-
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Natural
-                                Input Handler</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder=" Ninput.dll">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Shutdown
-                                Warning Dialog Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="4294967295">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Spooler</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="Windows 10 Enterprise 17763">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Thread
-                                Unresponsive Log Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="500">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission
-                                Retry Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="90">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER
-                                Nested Window Limit</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="50">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission
-                                Retry Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="90">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Nested Window Limit</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="500">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER
-                                Post Message Limit</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="10000">
-                            </div>
-                          </div>
-
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1000">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1D44CC5B8389EF9">
-                            </div>
-
-                          </div>
-                        </div>
-
-
-
-                      </div>
-                    </div>
-                    <div class="accordion-item mb-1.5 bg-white border border-gray-200">
-                      <h2 class="accordion-header mb-0" id="headingTwo">
-                        <button class="
-          accordion-button relative flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Device Not Selected Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="15">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Dwm Input UsesIo Completion Port</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Enable Dwm Input Processing</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">GDI Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1000">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Icon Service Lib</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="IconCodecService.dll">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">LoadAppInit_DLLs</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="0">
+              </div>
+            </div>
+          
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Natural Input Handler</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder=" Ninput.dll">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Shutdown Warning Dialog Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="4294967295">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Spooler</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="Windows 10 Enterprise 17763">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Thread Unresponsive Log Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="500">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission Retry Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="90">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER Nested Window Limit</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="50">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission Retry Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="90">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Nested Window Limit</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="500">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER Post Message Limit</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="10000">
+              </div>
+            </div>
+          
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1000">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1D44CC5B8389EF9">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-1.5 bg-white border border-gray-200">
+        <h2 class="accordion-header mb-0" id="headingTwo">
+          <button class="
+          accordion-button relative collapsed flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
           " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                          aria-controls="collapseTwo">
-                          \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_DLLs
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body text-center py-4 px-5">
-                          <img src="src/images/empty.png" class="m-auto">
-                          <p class="text-sm font-Poppins font-normal">No Data</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item mb-1.5 bg-white border border-gray-200">
-                      <h2 class="accordion-header mb-0" id="headingThree">
-                        <button class="accordion-button relative flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
+            aria-controls="collapseTwo">
+            <span class="pl-4"> \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_DLLs</span>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body text-center py-4 px-5">
+           <img src="src/images/empty.png" class="m-auto">
+           <p class="text-sm font-Poppins font-normal">No Data</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-1.5 bg-white border border-gray-200">
+        <h2 class="accordion-header mb-0" id="headingThree">
+          <button class="accordion-button collapsed relative flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
           " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                          aria-controls="collapseThree">
-                          \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="px-4">
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">AppInit_DLLs</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">DdeSendTimeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">DesktopHeapLogging</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Device
-                                Not Selected Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="15">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Dwm
-                                Input UsesIo Completion Port</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Enable
-                                Dwm Input Processing</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">GDI
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1000">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Icon
-                                Service Lib</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="IconCodecService.dll">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">LoadAppInit_DLLs</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                          </div>
-
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Natural
-                                Input Handler</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder=" Ninput.dll">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Shutdown
-                                Warning Dialog Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="4294967295">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Spooler</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="Windows 10 Enterprise 17763">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Thread
-                                Unresponsive Log Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="500">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission
-                                Retry Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="90">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER
-                                Nested Window Limit</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="50">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission
-                                Retry Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="90">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Nested Window Limit</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="500">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER
-                                Post Message Limit</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="10000">
-                            </div>
-                          </div>
-
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1000">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1D44CC5B8389EF9">
-                            </div>
-
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item mb-1.5 bg-white border border-gray-200">
-                      <h2 class="accordion-header mb-0" id="headingfour">
-                        <button class="
-          accordion-button relative flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
+            aria-controls="collapseThree">
+            <span class="pl-4">\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows</span>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="px-4">
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">AppInit_DLLs</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="0">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">DdeSendTimeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="0">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">DesktopHeapLogging</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Device Not Selected Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="15">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Dwm Input UsesIo Completion Port</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Enable Dwm Input Processing</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">GDI Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1000">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Icon Service Lib</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="IconCodecService.dll">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">LoadAppInit_DLLs</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="0">
+              </div>
+            </div>
+          
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Natural Input Handler</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder=" Ninput.dll">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Shutdown Warning Dialog Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="4294967295">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Spooler</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="Windows 10 Enterprise 17763">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Thread Unresponsive Log Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="500">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission Retry Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="90">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER Nested Window Limit</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="50">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission Retry Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="90">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Nested Window Limit</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="500">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER Post Message Limit</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="10000">
+              </div>
+            </div>
+          
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1000">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1D44CC5B8389EF9">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-1.5 bg-white border border-gray-200">
+        <h2 class="accordion-header mb-0" id="headingfour">
+          <button class="
+          accordion-button relative collapsed flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
           " type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
-                          aria-controls="collapsefour">
-                          \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_DLLs
-                        </button>
-                      </h2>
-                      <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body text-center py-4 px-5">
-                          <img src="src/images/empty.png" class="m-auto">
-                          <p class="text-sm font-Poppins font-normal">No Data</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item mb-1.5 bg-white border border-gray-200">
-                      <h2 class="accordion-header mb-0" id="headingfive">
-                        <button class="accordion-button relative flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
+            aria-controls="collapsefour">
+            <span class="pl-4">\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_DLLs</span>
+          </button>
+        </h2>
+        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body text-center py-4 px-5">
+           <img src="src/images/empty.png" class="m-auto">
+           <p class="text-sm font-Poppins font-normal">No Data</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-1.5 bg-white border border-gray-200">
+        <h2 class="accordion-header mb-0" id="headingfive">
+          <button class="accordion-button collapsed relative flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
           " type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
-                          aria-controls="collapsefive">
-                          \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
-                        </button>
-                      </h2>
-                      <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
-                        data-bs-parent="#accordionExample">
-                        <div class="px-4">
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">AppInit_DLLs</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">DdeSendTimeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">DesktopHeapLogging</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Device
-                                Not Selected Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="15">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Dwm
-                                Input UsesIo Completion Port</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Enable
-                                Dwm Input Processing</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">GDI
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1000">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Icon
-                                Service Lib</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="IconCodecService.dll">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">LoadAppInit_DLLs</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                          </div>
-
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Natural
-                                Input Handler</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder=" Ninput.dll">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Shutdown
-                                Warning Dialog Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="4294967295">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Spooler</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="Windows 10 Enterprise 17763">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Thread
-                                Unresponsive Log Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="500">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission
-                                Retry Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="90">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER
-                                Nested Window Limit</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="50">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission
-                                Retry Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="90">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Nested Window Limit</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="500">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER
-                                Post Message Limit</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="10000">
-                            </div>
-                          </div>
-
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1000">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1D44CC5B8389EF9">
-                            </div>
-
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item mb-1.5 bg-white border border-gray-200">
-                      <h2 class="accordion-header mb-0" id="headingsix">
-                        <button class="
-          accordion-button relative flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
+            aria-controls="collapsefive">
+            <span class="pl-4">  \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows</span>
+          </button>
+        </h2>
+        <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+          data-bs-parent="#accordionExample">
+          <div class="px-4">
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">AppInit_DLLs</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="0">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">DdeSendTimeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="0">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">DesktopHeapLogging</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Device Not Selected Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="15">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Dwm Input UsesIo Completion Port</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Enable Dwm Input Processing</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">GDI Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1000">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Icon Service Lib</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="IconCodecService.dll">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">LoadAppInit_DLLs</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="0">
+              </div>
+            </div>
+          
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Natural Input Handler</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder=" Ninput.dll">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Shutdown Warning Dialog Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="4294967295">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Spooler</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="Windows 10 Enterprise 17763">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Thread Unresponsive Log Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="500">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission Retry Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="90">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER Nested Window Limit</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="50">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission Retry Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="90">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Nested Window Limit</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="500">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER Post Message Limit</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="10000">
+              </div>
+            </div>
+          
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1000">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1D44CC5B8389EF9">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-1.5 bg-white border border-gray-200">
+        <h2 class="accordion-header mb-0" id="headingsix">
+          <button class="
+          accordion-button relative collapsed flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
           " type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false"
-                          aria-controls="collapsesix">
-                          \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_DLLs
-                        </button>
-                      </h2>
-                      <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body text-center py-4 px-5">
-                          <img src="src/images/empty.png" class="m-auto">
-                          <p class="text-sm font-Poppins font-normal">No Data</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item mb-1.5 bg-white border border-gray-200">
-                      <h2 class="accordion-header mb-0" id="headingsiven">
-                        <button class="accordion-button relative flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
+            aria-controls="collapsesix">
+            <span class="pl-4">  \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_DLLs</span>
+          </button>
+        </h2>
+        <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body text-center py-4 px-5">
+           <img src="src/images/empty.png" class="m-auto">
+           <p class="text-sm font-Poppins font-normal">No Data</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-1.5 bg-white border border-gray-200">
+        <h2 class="accordion-header mb-0" id="headingsiven">
+          <button class="accordion-button collapsed relative flex items-center w-full py-2 px-5 text-sm font-Poppins font-normal  text-gray-800 text-left    bg-gray-200 border-0 rounded-none transition focus:outline-none
           " type="button" data-bs-toggle="collapse" data-bs-target="#collapsesiven" aria-expanded="false"
-                          aria-controls="collapsefive">
-                          \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
-                        </button>
-                      </h2>
-                      <div id="collapsesiven" class="accordion-collapse collapse" aria-labelledby="headingsiven"
-                        data-bs-parent="#accordionExample">
-                        <div class="px-4">
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">AppInit_DLLs</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">DdeSendTimeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">DesktopHeapLogging</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Device
-                                Not Selected Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="15">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Dwm
-                                Input UsesIo Completion Port</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Enable
-                                Dwm Input Processing</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">GDI
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1000">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Icon
-                                Service Lib</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="IconCodecService.dll">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">LoadAppInit_DLLs</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="0">
-                            </div>
-                          </div>
-
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Natural
-                                Input Handler</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder=" Ninput.dll">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Shutdown
-                                Warning Dialog Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="4294967295">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Spooler</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="Windows 10 Enterprise 17763">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Thread
-                                Unresponsive Log Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="500">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission
-                                Retry Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="90">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER
-                                Nested Window Limit</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="50">
-                            </div>
-                          </div>
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission
-                                Retry Timeout</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="90">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Nested Window Limit</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="500">
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER
-                                Post Message Limit</label>
-                              <input type="text"
-                                class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="10000">
-                            </div>
-                          </div>
-
-                          <div class="gap-x-14 mb-8 columns-3">
-                            <div class="mb-3">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1000">
-                            </div>
-                            <div class="mb-3 ">
-                              <label for="exampleFormControlInput1"
-                                class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER
-                                Process Handle Quota</label>
-                              <input type="text"
-                                class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
-                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none "
-                                id="exampleFormControlInput1" placeholder="1D44CC5B8389EF9">
-                            </div>
-
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            aria-controls="collapsefive">
+            <span class="pl-4">   \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows</span>
+          </button>
+        </h2>
+        <div id="collapsesiven" class="accordion-collapse collapse" aria-labelledby="headingsiven"
+          data-bs-parent="#accordionExample">
+          <div class="px-4">
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">AppInit_DLLs</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="0">
               </div>
 
               <div class="viewjsn hidden max-h-screen overflow-y-auto mt-5 pr-3">
@@ -1344,17 +701,106 @@
                 </div>
               </div>
             </div>
-
-            <!--------------------------------Driverstable End------------------------------------------->
-
-
-
-
-
-
-
-
-
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Device Not Selected Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="15">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Dwm Input UsesIo Completion Port</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Enable Dwm Input Processing</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8  mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">GDI Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1000">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Icon Service Lib</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="IconCodecService.dll">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">LoadAppInit_DLLs</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="0">
+              </div>
+            </div>
+          
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Natural Input Handler</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder=" Ninput.dll">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Shutdown Warning Dialog Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="4294967295">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">Spooler</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="Windows 10 Enterprise 17763">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Thread Unresponsive Log Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="500">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission Retry Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="90">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER Nested Window Limit</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="50">
+              </div>
+            </div>
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">Transmission Retry Timeout</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="90">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Nested Window Limit</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="500">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label inline-block mb-3 font-normal text-sm font-Poppins text-gray-700">USER Post Message Limit</label>
+                <input type="text" class="form-control block w-full px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="10000">
+              </div>
+            </div>
+          
+            <div class="gap-x-14 mb-8 mt-4 columns-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1000">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label font-Poppins inline-block mb-3 font-normal text-sm text-gray-700">USER Process Handle Quota</label>
+                <input type="text" class="form-control block w-full font-Poppins px-2 py-1 text-xs font-normal text-gray-700 bg-[#FAFBFC] bg-clip-padding
+                    border border-solid border-gray-300 rounded transition ease-in-out  m-0 focus:text-gray-700 focus:bg-[#FAFBFC] focus:border-blue-600 focus:outline-none " id="exampleFormControlInput1" placeholder="1D44CC5B8389EF9">
+              </div>
+              
+            </div>
           </div>
 
         </div>
