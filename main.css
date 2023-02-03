@@ -44,7 +44,9 @@ button.viewbut.open+ .dropdown-content {  display: block;}
 
 .content {  visibility: hidden;}
  .toltipe:hover +.content {  visibility: visible;}
-
+ .snapshottoltip {visibility: hidden;}
+ .Snapshottip:hover .snapshottoltip {visibility: visible;}
+ .filtercustome {z-index:999}
 @media screen and (max-width: 639px) {
   .container {
     max-width: 100%;
