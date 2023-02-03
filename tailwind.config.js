@@ -12,6 +12,8 @@ module.exports = {
         'sm': '50px',
       },
       colors: {
+        'toltipbg':'#737A80',
+        'whitergba':'rgba(255, 255, 255, 0.3)',
         'shamrock':'rgba(60, 210, 165, 0.2)',
         'white': '#fff',
         'inputbg':'#D6F3FB', 
