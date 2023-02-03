@@ -6,7 +6,16 @@ jQuery(document).ready(function () {
     $(".dropdown").slideUp();
   });
 
-  jQuery('#documents').DataTable();
+
+  $(".compae").click(function () {
+    $(".ResponseTeam").slideToggle();
+    $(".compae").toggleClass("rduser");
+  });
+  $(".upslide").click(function () {
+    $(".ResponseTeam").slideUp();
+  });
+
+  $('#documents').DataTable();
 
   $(".rightbut").click(function(){
     $(".rightsidmenu").toggleClass("right");
@@ -303,6 +312,11 @@ $('input[type="checkbox"]#tableview').change(function() {
 $("#forgetpass").click(function(){
   $("#mainlogin").addClass("hidden");
   $("#sendlink").removeClass("hidden");
+});
+$(".sendlinknewass").click(function(){
+  $("#mainlogin").addClass("hidden");
+  $("#sendlink").addClass("hidden");
+  $(".allforgetpasswerd").removeClass("hidden");
 });
 
    //////////Dashboard////////////
